@@ -1,7 +1,7 @@
 # whatssub
 [![CircleCI](https://circleci.com/gh/dooboolab/dooboo-native-ts.svg?style=shield)](https://circleci.com/gh/dooboolab/whatssub)
 [![codecov](https://codecov.io/gh/dooboolab/whatssub/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/whatssub)
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 ![whatssub](https://user-images.githubusercontent.com/27461460/60770813-1b415980-a11a-11e9-9dfb-6993b6816a07.gif)
@@ -247,6 +247,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/bumjoo"><img src="https://avatars1.githubusercontent.com/u/43266906?v=4" width="60px;" alt="bumjoo.lee"/><br /><sub><b>bumjoo.lee</b></sub></a><br /><a href="https://github.com/dooboolab/whatssub/commits?author=bumjoo" title="Code">💻</a> <a href="https://github.com/dooboolab/whatssub/commits?author=bumjoo" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/hankkuu"><img src="https://avatars2.githubusercontent.com/u/7829802?v=4" width="60px;" alt="hankkuu"/><br /><sub><b>hankkuu</b></sub></a><br /><a href="https://github.com/dooboolab/whatssub/commits?author=hankkuu" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sandwichj"><img src="https://avatars1.githubusercontent.com/u/11019960?v=4" width="60px;" alt="Minseok"/><br /><sub><b>Minseok</b></sub></a><br /><a href="https://github.com/dooboolab/whatssub/commits?author=Sandwichj" title="Code">💻</a> <a href="https://github.com/dooboolab/whatssub/commits?author=Sandwichj" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/jb9229"><img src="https://avatars3.githubusercontent.com/u/3200647?v=4" width="60px;" alt="cwalker"/><br /><sub><b>cwalker</b></sub></a><br /><a href="https://github.com/dooboolab/whatssub/commits?author=jb9229" title="Code">💻</a> <a href="https://github.com/dooboolab/whatssub/commits?author=jb9229" title="Tests">⚠️</a></td>
   </tr>
 </table>
 

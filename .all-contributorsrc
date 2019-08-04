@@ -111,6 +111,16 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "jb9229",
+      "name": "cwalker",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3200647?v=4",
+      "profile": "https://github.com/jb9229",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
