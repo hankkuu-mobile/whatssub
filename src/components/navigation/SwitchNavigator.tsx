@@ -24,7 +24,7 @@ const SwitchNavigator: NavigationContainer = createSwitchNavigator(
     MainEmpty,
   },
   {
-    initialRouteName: 'HomeTabNavigator',
+    initialRouteName: 'AuthLoadingScreen',
   },
 );
 
