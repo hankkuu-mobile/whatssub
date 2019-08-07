@@ -4,7 +4,6 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import Button from '../shared/Button';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
 

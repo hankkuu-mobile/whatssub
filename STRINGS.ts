@@ -31,6 +31,7 @@ const en = {
   SETTING_NOTIFICATION_MARKETING_EMAIL: 'Marketing email notification',
   SETTING_NOTIFICATION_MARKETING_PUSH: 'Marketing push notification',
   SETTING_OTHERS_CONTACTUS: 'Contact us',
+  SIGN_OUT: 'Sign Out',
 };
 
 const ko = {
@@ -63,6 +64,7 @@ const ko = {
   SETTING_NOTIFICATION_MARKETING_EMAIL: '마케팅 이메일 알림',
   SETTING_NOTIFICATION_MARKETING_PUSH: '마케팅 앱 푸쉬 알림',
   SETTING_OTHERS_CONTACTUS: '문의하기',
+  SIGN_OUT: '로그아웃',
 };
 
 i18n.fallbacks = true;

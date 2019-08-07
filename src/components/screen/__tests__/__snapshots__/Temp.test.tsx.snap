@@ -38,8 +38,7 @@ exports[`[Temp] render renders without crashing 1`] = `
           Object {
             "alignItems": "center",
             "alignSelf": "center",
-            "backgroundColor": "#023059",
-            "borderColor": "#023059",
+            "borderColor": "blue",
             "borderRadius": 4,
             "borderWidth": 2,
             "height": 52,
@@ -54,12 +53,10 @@ exports[`[Temp] render renders without crashing 1`] = `
     >
       <Text
         style={
-          Array [
-            Object {
-              "color": "#000000",
-              "fontSize": 14,
-            },
-          ]
+          Object {
+            "color": "#069ccd",
+            "fontSize": 14,
+          }
         }
       >
         Go Back

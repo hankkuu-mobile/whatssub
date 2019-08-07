@@ -17,7 +17,7 @@ import {
 } from '../../../config';
 
 import { AppContext } from '../../providers';
-import Button from '../shared/Button';
+import { Button } from 'dooboo-native-widgets';
 import Constants from 'expo-constants';
 import { ScreenProps } from '../../types';
 import { Text } from 'react-native-animatable';

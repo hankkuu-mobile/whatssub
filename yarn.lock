@@ -5397,10 +5397,10 @@ domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-dooboo-native-widgets@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/dooboo-native-widgets/-/dooboo-native-widgets-0.1.13.tgz#0e011935f101ebcf1abe0eec66efddd131602536"
-  integrity sha512-TFQBhccFOC4nXkNipxu04iqejJeJdVT/2iSJj0YmrT1+E0DD4m8bTi66UFYynJxbwDeUooFbFBWuigFvVA2m2w==
+dooboo-native-widgets@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/dooboo-native-widgets/-/dooboo-native-widgets-0.2.2.tgz#22d6697e61a52eba79444fa56112569f6a04f4ce"
+  integrity sha512-Cs25qmD82aWCTB7ogBaT4d6XyRGxKuoq/WukEmDN7P3Z6xX/I4yXpILvf4mwkvjksPKwV25YtVBV84djrIxa7w==
   dependencies:
     dooboolab-welcome "^1.1.0"
 

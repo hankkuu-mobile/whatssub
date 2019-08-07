@@ -1,5 +1,7 @@
 import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 import React, { useEffect, useState } from 'react';
+import { AsyncStorage } from 'react-native';
+import { Button } from 'dooboo-native-widgets';
 import Constants from 'expo-constants';
 import SectionList from '../shared/SectionList';
 import SettingOption from '../shared/SettingOption';
@@ -20,6 +22,14 @@ const AccountEmail = styled.TextInput`
   font-size: 16;
   color: rgb(153, 162, 170);
   letter-spacing: -0.5;
+`;
+
+const SignOutButton = styled(Button)`
+  width: 80%;
+  height: 48;
+  margin-bottom: 24;
+  border-width: 1;
+  border-color: ${({ theme }) => theme.rosa};
 `;
 
 interface Props {
@@ -122,6 +132,17 @@ function Page({
             onPress: handleContactUsPress,
           }],
         }]}
+      />
+      <SignOutButton
+        testID='BTN_SIGN_OUT'
+        onClick={() => {
+          AsyncStorage.removeItem('token');
+          navigation.navigate('AuthStackNavigator');
+        }}
+        text={getString('SIGN_OUT')}
+        textStyle={{
+          color: screenProps.theme.rosa,
+        }}
       />
     </Container>
   );

@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "dooboo-native-widgets": "^0.1.13",
+    "dooboo-native-widgets": "^0.2.2",
     "expo": "^34.0.3",
     "expo-app-auth": "^6.0.0",
     "expo-constants": "^6.0.0",

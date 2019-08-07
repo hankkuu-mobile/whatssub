@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../shared/Button';
+import { Button } from 'dooboo-native-widgets';
 import styled from 'styled-components/native';
 
 const Container = styled.View`

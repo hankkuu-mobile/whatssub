@@ -1,3 +1,3 @@
-import './shared/Button';
+import 'dooboo-native-widgets';
 import './screen';
 import './sample';

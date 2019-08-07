@@ -26,6 +26,9 @@ google-services.json
 GoogleService-Info.plist
 app.json
 
-#IDE
+# IDE
 .idea/
 .vscode
+
+# Storybook
+.favorites.json

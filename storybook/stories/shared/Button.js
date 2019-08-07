@@ -1,7 +1,7 @@
 import { IC_FACEBOOK, IC_GOOGLE, IC_LOGO, IC_SLASH } from '../../../src/utils/Icons';
 import { addDecorator, storiesOf } from '@storybook/react-native';
 import { boolean, number, text } from '@storybook/addon-knobs';
-import Button from '../../../src/components/shared/Button';
+import { Button } from 'dooboo-native-widgets';
 import React from 'react';
 import styled from 'styled-components/native';
 
