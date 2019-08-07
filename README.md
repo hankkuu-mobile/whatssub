@@ -1,6 +1,6 @@
 # whatssub
-[![CircleCI](https://circleci.com/gh/whatssub/whatssub-mobile.svg?style=shield)](https://circleci.com/gh/dooboolab/whatssub)
-[![codecov](https://codecov.io/gh/whatssub/whatssub-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/whatssub)
+[![CircleCI](https://circleci.com/gh/whatssub/whatssub-mobile.svg?style=shield)](https://circleci.com/gh/whatssub/whatssub-mobile)
+[![codecov](https://codecov.io/gh/whatssub/whatssub-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/whatssub/whatssub-mobile)
 [![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
