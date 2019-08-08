@@ -1,4 +1,7 @@
-## Contribution Guide
+## Contribution Guide (@copyright by dooboolab)
+> Followed by `dooboolab.com`'s [CONTRIBUTING GUILDE](https://github.com/dooboolab/dooboolab.com/edit/master/contributing.md)
+> @copyright by dooboolab
+
 > You should be aware of below stacks(do not need to be professional) to contribute to our repository.
 1. [React Native](https://facebook.github.io/react-native)
 2. [expo](https://expo.io)
@@ -13,7 +16,7 @@
 1. Fork our project to yours.
    * Recommended to have `forked` master branch to be updated to upstream.
    * Configure [Syncing a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
-     - `git remote add upstream https://github.com/dooboolab/whatssub`
+     - `git remote add upstream https://github.com/whatssub/whatssub-mobile`
      - Check it with `git remote -v`
    * Fetch the branches from upstream repository by `git fetch upstream`
    * When you want to give `PR`, make new branch `git checkout -b [feature_name]`

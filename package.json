@@ -1,5 +1,5 @@
 {
-  "name": "dooboo",
+  "name": "whatssub-mobile",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "build": "rm -rf ./dist && tsc",
