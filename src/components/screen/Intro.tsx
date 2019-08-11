@@ -2,13 +2,15 @@ import * as AppAuth from 'expo-app-auth';
 import * as Facebook from 'expo-facebook';
 import * as GoogleSignIn from 'expo-google-sign-in';
 
-import { IC_FACEBOOK, IC_GOOGLE, IC_LOGO, IC_SLASH } from '../../utils/Icons';
-import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 import {
+  AsyncStorage,
   Platform,
   TouchableOpacity,
   View,
 } from 'react-native';
+import { AuthPayload, Gender, ScreenProps, SocialInput } from '../../types';
+import { IC_FACEBOOK, IC_GOOGLE, IC_LOGO, IC_SLASH } from '../../utils/Icons';
+import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 import React, { useContext, useEffect, useState } from 'react';
 import {
   androidExpoClientId,
@@ -19,12 +21,13 @@ import {
 import { AppContext } from '../../providers';
 import { Button } from 'dooboo-native-widgets';
 import Constants from 'expo-constants';
-import { ScreenProps } from '../../types';
 import { Text } from 'react-native-animatable';
 import _range from 'lodash/range';
 import { getString } from '../../../STRINGS';
+import { gql } from 'apollo-boost';
 import styled from 'styled-components/native';
 import useInterval from '../../hooks/useInterval';
+import { useMutation } from '@apollo/react-hooks';
 
 const Container = styled.View`
   flex: 1;
@@ -109,7 +112,22 @@ interface Props {
 export const titleArray =
   _range(5).map((index: number) => getString(`INTRO_TITLE_${index + 1}`));
 
+export const MUTATION_FACEBOOK = gql`
+  mutation signInFacebook($socialUser: SocialUserCreateInput!) {
+    signInFacebook(socialUser: $socialUser) {
+      token
+      user {
+        id
+        email
+      }
+    }
+  }
+`;
+
 function Intro(props: Props) {
+  const [requestSignInFacebook] =
+    useMutation<AuthPayload, {socialUser: SocialInput}>(MUTATION_FACEBOOK);
+
   const [titleIndex, setTitleIndex] = React.useState(0);
   const [googleUser, setGoogleUser] = useState(null);
   const [signingInFacebook, setSigningInFacebook] = useState(false);
@@ -165,10 +183,6 @@ function Intro(props: Props) {
     }
   };
 
-  // if (user) {
-  //   props.navigation.navigate('MainStackNavigator');
-  // }
-
   const facebookLogin = async () => {
     setSigningInFacebook(true);
     try {
@@ -177,14 +191,36 @@ function Intro(props: Props) {
         token,
       } = await Facebook.logInWithReadPermissionsAsync(
         Constants.manifest.facebookAppId, {
-          permissions: ['public_profile'],
+          permissions: ['email', 'public_profile'],
         });
       if (type === 'success') {
-        // Build Firebase credential with the Facebook access token.
-        // const credential = firebase.auth
-        // .FacebookAuthProvider.credential(token);
-        // Sign in with credential from the Facebook user.
-        // await firebase.auth().signInWithCredential(credential);
+        const response = await fetch(
+          `https://graph.facebook.com/me?fields=
+            id,name,email,birthday,gender,first_name,last_name,picture
+            &access_token=${token}`,
+        );
+        const responseObject = JSON.parse(await response.text());
+        const socialInput: SocialInput = {
+          social: responseObject.id,
+          photo: responseObject.picture && responseObject.picture.data
+            ? responseObject.picture.data.url
+            : null,
+          email: responseObject.email,
+          name: responseObject.name,
+          nickname: responseObject.name,
+          birthday: responseObject.birthday,
+          phone: responseObject.mobile_phone,
+          gender: responseObject.gender === 'male'
+            ? Gender.MALE
+            : responseObject.gender === 'female'
+              ? Gender.FEMALE
+              : null,
+        };
+        const variables = { socialUser: socialInput };
+        const { data: { signInFacebook } }: any = await requestSignInFacebook({ variables });
+        const accessToken = signInFacebook.token;
+        AsyncStorage.setItem('token', accessToken);
+        props.navigation.navigate('MainStackNavigator');
       } else {
         // type === 'cancel'
       }
@@ -262,6 +298,10 @@ function Intro(props: Props) {
               isLoading={signingInGoogle}
               indicatorColor={props.screenProps.theme.marine}
               onClick={ () => googleSignInAsync() }
+              textStyle={{
+                color: props.screenProps.theme.fontColor,
+                fontSize: 14,
+              }}
               text={getString('SIGN_IN_WITH_GOOGLE')}
             />
             <View style={{ marginTop: 8 }}/>
@@ -274,9 +314,13 @@ function Intro(props: Props) {
               imgLeftStyle={{
                 height: 28,
                 width: 16,
+                position: 'absolute',
+                left: 16,
               }}
-              onClick={ () => {
-                facebookLogin();
+              onClick={facebookLogin}
+              textStyle={{
+                color: props.screenProps.theme.fontColor,
+                fontSize: 14,
               }}
               text={getString('SIGN_IN_WITH_FACEBOOK')}
             />

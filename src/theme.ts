@@ -59,7 +59,7 @@ export const colors: Colors = {
   backgroundDark: '#333333',
   highlightLight: localColors.blue,
   highlightDark: localColors.blue,
-  textPrimaryLight: localColors.black,
+  textPrimaryLight: localColors.darkGray,
   textPrimaryDark: localColors.white,
   textSecondaryLight: localColors.gray,
   textSecondaryDark: '#696969',

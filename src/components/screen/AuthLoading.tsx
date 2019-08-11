@@ -1,6 +1,7 @@
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
 import React, { useState } from 'react';
 import { Asset } from 'expo-asset';
+import { AsyncStorage } from 'react-native';
 import { IMG_GIF_SPLASH } from '../../utils/Images';
 import { SplashScreen } from 'expo';
 import styled from 'styled-components/native';
@@ -44,6 +45,15 @@ export default function AuthLoading(props: Props) {
     }
   };
 
+  const navigateToScreen = async () => {
+    const token = await AsyncStorage.getItem('token');
+    if (token) {
+      props.navigation.navigate('MainStackNavigator');
+      return;
+    }
+    props.navigation.navigate('AuthStackNavigator');
+  };
+
   React.useEffect(() => {
     if (!isAppReady) {
       SplashScreen.preventAutoHide();
@@ -51,11 +61,7 @@ export default function AuthLoading(props: Props) {
       return;
     }
 
-    // if non-authorized user
-    props.navigation.navigate('AuthStackNavigator');
-
-    // if authorized user
-    // props.navigation.navigate('MainStackNavigator');
+    navigateToScreen();
   }, [isAppReady]);
 
   if (!isAppReady && areResourcesReady) {
@@ -66,8 +72,9 @@ export default function AuthLoading(props: Props) {
           source={IMG_GIF_SPLASH}
           resizeMode='contain'
           onLoadEnd={() => {
-            setTimeout(() => {
+            const timeout = setTimeout(() => {
               setAppReady(true);
+              clearTimeout(timeout);
             }, SPLASH_SHOW_TIME);
             SplashScreen.hide();
           }}

@@ -11,6 +11,7 @@ import AuthStackNavigator from './AuthStackNavigator';
 import HomeTabNavigator from './HomeTabNavigator';
 import MainEmpty from '../screen/MainEmpty';
 import MainStackNavigator from './MainStackNavigator';
+import Temp from '../screen/Temp';
 import { createTheme } from '../../theme';
 
 const SwitchNavigator: NavigationContainer = createSwitchNavigator(
@@ -20,6 +21,7 @@ const SwitchNavigator: NavigationContainer = createSwitchNavigator(
     MainStackNavigator,
     HomeTabNavigator,
     MainEmpty,
+    Temp,
   },
   {
     initialRouteName: 'AuthLoadingScreen',
