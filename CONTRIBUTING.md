@@ -1,8 +1,10 @@
 ## Contribution Guide (@copyright by dooboolab)
+
 > Followed by `dooboolab.com`'s [CONTRIBUTING GUILDE](https://github.com/dooboolab/dooboolab.com/edit/master/contributing.md)
 > @copyright by dooboolab
 
 > You should be aware of below stacks(do not need to be professional) to contribute to our repository.
+
 1. [React Native](https://facebook.github.io/react-native)
 2. [expo](https://expo.io)
 3. ~~[cocoapod](https://cocoapods.org)~~
@@ -11,11 +13,13 @@
    - We are using `vscode` as our ide. Please install `eslint` plugin.
 6. [Graphql](https://graphql.org)
 7. [Apollo Client](https://www.apollographql.com/docs/react/why-apollo)
+8. [Storybook](https://storybook.js.org/)
 
 ### Installation
+
 1. Fork our project to yours.
-   * Recommended to have `forked` master branch to be updated to upstream.
-   * Configure [Syncing a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+   - Recommended to have `forked` master branch to be updated to upstream.
+   - Configure [Syncing a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
      - `git remote add upstream https://github.com/whatssub/whatssub-mobile`
      - Check it with `git remote -v`
    * Fetch the branches from upstream repository by `git fetch upstream`
@@ -30,36 +34,37 @@
    ```
    yarn
    ```
-   * Note that we recommend using yarn because all of our team members do.
-   * Also node that `yarn.lock` and `package-lock.json` sometimes make collision. Try to delete one of them.
+   - Note that we recommend using yarn because all of our team members do.
+   - Also node that `yarn.lock` and `package-lock.json` sometimes make collision. Try to delete one of them.
 4. ~~Configure `ios` project~~
-   * ~~Go to `ios` directory and run `pod install`~~
-   * ~~Since `react-native` is using version `0.60` for now, the project is built with `pod` project which is required to install packages to build your `ios` project.~~
+   - ~~Go to `ios` directory and run `pod install`~~
+   - ~~Since `react-native` is using version `0.60` for now, the project is built with `pod` project which is required to install packages to build your `ios` project.~~
 5. ~~Configure `android` project~~
-   * ~~Not much required. Be aware your project should be compatible with `androidx`.~~
+   - ~~Not much required. Be aware your project should be compatible with `androidx`.~~
      - ~~Above means you should be careful when using third party `react-native native modules` because they might not be compatible with `androidx` which will result in failed build.~~
 6. Configure `environment` for project
-   * Copy `config.sample.ts` to `config.ts`.
+   - Copy `config.sample.ts` to `config.ts`.
      ```
      cp config.sample.ts config.ts
      ```
-   * Copy `app.sample.json` to `app.json`.
+   - Copy `app.sample.json` to `app.json`.
      ```
      cp app.sample.json app.json
      ```
      > Note that you should avoid using fake string like `"reservedClientId": "<reservedClientId>"`. Please erase it if you've not have one or put the real one otherwise `expo` won't start your app.
-6. Install `expo-cli`
+7. Install `expo-cli`
    - `npm install -g expo-cli`
-7. Run your project
-   * `ios`
+8. Run your project
+   - `ios`
      - yarn run `ios`
-   * `android`
+   - `android`
      - yarn run `android`
        > Note that you should open your emulator beforehand before running above command since the script won't automatically open emulator unlike `ios`.
-8. Configure linting in [vscode](https://code.visualstudio.com) correctly.
-   * Example vscode [setting.json](https://gist.github.com/hyochan/815e9040593180c4725d7694d863e5a1)
+9. Configure linting in [vscode](https://code.visualstudio.com) correctly.
+   - Example vscode [setting.json](https://gist.github.com/hyochan/815e9040593180c4725d7694d863e5a1)
 
 ### Commit message
+
 Commit messages should include a title, summary, and test plan.
 
 Write the title in the imperative mood and prefix it with a tag that describes the affected code, like [android] or [video], and makes it easier to read through the commit log.
@@ -71,12 +76,13 @@ Use the test plan to communicate how to verify the code actually works and to he
 This post called [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) has a lot of good guidance, too.
 
 ### Issue
-* Please search and register if you already have the issue you want to create. If you have a similar issue, you can add additional comments.
-* Please write a problem or suggestion in the issue. Never include more than one item in an issue.
-* Please be as detailed and concise as possible.
-	* If necessary, please take a screenshot and upload an image.
+
+- Please search and register if you already have the issue you want to create. If you have a similar issue, you can add additional comments.
+- Please write a problem or suggestion in the issue. Never include more than one item in an issue.
+- Please be as detailed and concise as possible. \* If necessary, please take a screenshot and upload an image.
 
 ### Pull request(PR)
+
 PR is available to `master` branch.
 
 Each PR should correspond to one idea and implement it coherently. This idea may be a feature that spans several parts of the codebase. For example, changing an API may include changes to the Android, iOS, and web implementations, the JavaScript SDK, and the docs for the API.
@@ -84,7 +90,9 @@ Each PR should correspond to one idea and implement it coherently. This idea may
 Generally, each PR should contain one commit that is amended as you address code review feedback. Each commit should be meaningful and make sense on its own. Similarly, it should be easy to revert each commit. This keeps the commit history easier to read when people are working on this code or searching for a commit that could have broken something.
 
 ### Coding Guidelines
+
 Please follow the Coding conventions as much as possible when contributing your code. This is mostly covered by `eslint` plugin in `vscode`. Add `eslint` plugin and add below in `setting.json` in `vscode` to fix `coding style` in live editing.
+
 ```
 "eslint.enable": true,
 "eslint.validate": [
@@ -94,12 +102,14 @@ Please follow the Coding conventions as much as possible when contributing your 
   "typescriptreact"
 ],
 ```
+
 > `npm run lint` command will cover your code style either.
 
 General styles
-* The indent tab is two spaces.
-* The class declaration and the `{}` in curly brackets such as function, if, foreach, for, and while should be in the following format. Also if you installed eslint in vscode or in your code editor, it will help you with linting.
-	* `{` should be placed in same line and `}` should be placed in next line.
+
+- The indent tab is two spaces.
+- The class declaration and the `{}` in curly brackets such as function, if, foreach, for, and while should be in the following format. Also if you installed eslint in vscode or in your code editor, it will help you with linting. \* `{` should be placed in same line and `}` should be placed in next line.
+
 ```
 for (let i = 0; i < 10; i++) {
   ...
@@ -108,5 +118,10 @@ array.forEach((e) => {
   ...
 });
 ```
-  * Space before `(` and after `)`.
-* **If you find code that does not fit in the coding convention, do not ever try to fix code that is not related to your purpose.**
+
+- Space before `(` and after `)`.
+- **If you find code that does not fit in the coding convention, do not ever try to fix code that is not related to your purpose.**
+
+### Storybook
+
+To write storybook you can follow this [STORYBOOK.md](./STORYBOOK.md) file

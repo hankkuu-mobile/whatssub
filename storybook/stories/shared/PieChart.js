@@ -1,66 +1,52 @@
-import PieChart, { Product } from '../shared/PieChart';
-import React, { Component } from 'react';
-import {
-  Text,
-  TouchableOpacity,
-} from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
+
+import PieChart from '../../../src/components/shared/PieChart';
+import React from 'react';
 import { getString } from '../../../STRINGS';
+import { storiesOf } from '@storybook/react-native';
 import styled from 'styled-components/native';
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: ${(props) => props.theme.background};
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 `;
+const ContainerDeco = (storyFn) => <Container>{storyFn()}</Container>;
 
-interface Props {
-  navigation: any;
-}
-
-function Page(props: Props) {
-  const [data, setData] = React.useState(null);
+const Story = () => {
   const [selectedMonth, setSelectedMonth] = React.useState('2019.06');
-  React.useEffect(() => {
-    setData(sampleDatas[selectedMonth]);
-    return () => {};
-  }, [selectedMonth]);
 
   return (
-    <Container style={{
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: 'white',
-    }}>
+    <>
       <PieChart
-        data={data}
+        data={sampleDatas[selectedMonth]}
         style={{ width: 300, height: 300 }}
-        defaultShowSlice={ 0 }
+        defaultShowSlice={0}
         currentMonth={selectedMonth}
       />
-      {/* <PieChartWithDynamicSlices/>
-      <PieChartWithCenteredLabels/> */}
       <TouchableOpacity
-        onPress={ () => {
+        onPress={() => {
           setSelectedMonth('2019.06');
         }}
       >
         <Text>{'2019.06'}</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={ () => {
+        onPress={() => {
           setSelectedMonth('2019.07');
         }}
       >
         <Text>{'2019.07'}</Text>
       </TouchableOpacity>
-    </Container>
+    </>
   );
-}
+};
 
-export default Page;
+storiesOf('shared-PieChart', module)
+  .addDecorator(ContainerDeco)
+  .add('default', () => <Story />);
 
-const sampleDatas: { [ key : string ]: Product[] } = {
+const sampleDatas = {
   2019.06: [
     {
       name: 'prod_1',
@@ -154,6 +140,5 @@ const sampleDatas: { [ key : string ]: Product[] } = {
       image: '',
       currentMonthPaymentDate: new Date(),
     },
-
   ],
 };

@@ -1,3 +1,174 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[PieChart] renders without crashing 1`] = `null`;
+exports[`[PieChart] renders without crashing 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "justifyContent": "center",
+        },
+        Object {
+          "height": 300,
+          "width": 300,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "flexDirection": "column",
+          },
+          Object {
+            "height": 50,
+            "left": "75%",
+            "position": "absolute",
+            "top": 0,
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "'rgb(62,126,255)'",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#99a2aa",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        0원
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 214,
+          "width": 214,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "position": "absolute",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 14,
+            },
+            Object {},
+          ]
+        }
+      >
+        2019.06
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 14,
+            },
+            Object {
+              "color": "#99a2aa",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Amount to be paid
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 14,
+            },
+            Object {
+              "color": "#99a2aa",
+              "fontSize": 24,
+            },
+          ]
+        }
+      >
+        500원
+      </Text>
+    </View>
+  </View>,
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text>
+      2019.06
+    </Text>
+  </View>,
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text>
+      2019.07
+    </Text>
+  </View>,
+]
+`;

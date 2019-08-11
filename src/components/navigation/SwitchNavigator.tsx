@@ -8,7 +8,6 @@ import React, { useContext } from 'react';
 import { AppContext } from '../../providers';
 import AuthLoadingScreen from '../screen/AuthLoading';
 import AuthStackNavigator from './AuthStackNavigator';
-import ExamplePieChartMonth from '../screen/ExamplePieChartMonth';
 import HomeTabNavigator from './HomeTabNavigator';
 import MainEmpty from '../screen/MainEmpty';
 import MainStackNavigator from './MainStackNavigator';
@@ -20,7 +19,6 @@ const SwitchNavigator: NavigationContainer = createSwitchNavigator(
     AuthStackNavigator,
     MainStackNavigator,
     HomeTabNavigator,
-    ExamplePieChartMonth,
     MainEmpty,
   },
   {
