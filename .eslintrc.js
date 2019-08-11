@@ -44,5 +44,6 @@ module.exports =  {
       'named': 'never',
       'asyncArrow': 'always'
     }],
+    "react/prop-types": 0,
   },
 };

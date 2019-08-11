@@ -1,5 +1,5 @@
 import { IC_EDIT, IC_NOTI_OFF, IC_NOTI_ON } from '../../utils/Icons';
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { SwitchToggle } from 'dooboo-native-widgets';
 import {
   TouchableOpacity,
@@ -20,7 +20,7 @@ const Container = styled.View<{ isSummary: boolean }>`
   
 `;
 
-const HeaderView = styled.View<{isSubscription: boolean}>`
+const HeaderView = styled.View<{ isSubscription: boolean }>`
   position: absolute;
   width: 100%;
   height: ${({ isSubscription }) => isSubscription ? '40' : '30'};
@@ -93,7 +93,7 @@ const DateText = styled.Text<{ variant: Variant, isSummary: boolean }>`
       : 'rgb(62, 126, 255)'};
 `;
 
-const ProductImage = styled.Image<{isSubscription: boolean}>`
+const ProductImage = styled.Image<{ isSubscription: boolean }>`
   width: ${({ isSubscription }) => isSubscription ? '75' : '31'};
   height: ${({ isSubscription }) => isSubscription ? '20' : '31'};
   margin-top: ${({ isSubscription }) => isSubscription ? '10' : '0'};
@@ -123,7 +123,7 @@ export enum Variant {
   Payment = 'payment',
 };
 
-interface Props {
+export interface ProductCardProps {
   onClickNotification: () => void;
   onClickSubscription?: () => void;
   onClickEdit: () => void;
@@ -137,20 +137,11 @@ interface Props {
   defaultIsSummary?: boolean;
 }
 
-function Shared(props: Props) {
-  const {
-    name,
-    image,
-    price,
-    currentMonthPaymentDate,
-    variant = Variant.Subscription,
-    isNotificationEnable,
-    isSubscribing = false,
-    onClickSubscription,
-    onClickNotification,
-    onClickEdit,
-    defaultIsSummary = false,
-  } = props;
+const ProductCard: FC<ProductCardProps> = ({
+  name, image, price, currentMonthPaymentDate, variant = Variant.Subscription,
+  isNotificationEnable, isSubscribing = false, onClickSubscription, onClickNotification,
+  onClickEdit, defaultIsSummary = false,
+}) => {
   const dDay = moment(currentMonthPaymentDate)
     .diff(moment().startOf('day'), 'day');
   const isSubscription = variant === Variant.Subscription;
@@ -239,6 +230,6 @@ function Shared(props: Props) {
       </Container>
     </TouchableOpacity>
   );
-}
+};
 
-export default Shared;
+export default ProductCard;

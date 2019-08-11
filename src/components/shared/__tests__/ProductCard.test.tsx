@@ -1,22 +1,26 @@
 import 'react-native';
 import * as React from 'react';
-import {
-  RenderResult,
-  act,
-  fireEvent,
-  render,
-} from '@testing-library/react-native';
+import ProductCard, { ProductCardProps, Variant } from '../ProductCard';
+import { RenderResult, act, fireEvent, render } from '@testing-library/react-native';
 
 import { AppProvider } from '../../../providers';
-import ProductCard from '../ProductCard';
 import { ThemeProvider } from 'styled-components/native';
 import { ThemeType } from '../../../types';
 import { createTheme } from '../../../theme';
-
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-const component = (props?: any) => {
+const props = {
+  name: 'netflix',
+  image: 'url',
+  onClickEdit: () => {},
+  isNotificationEnable: false,
+  onClickNotification: () => {},
+  price: 1234,
+  currentMonthPaymentDate: new Date(),
+};
+
+const component = (props: ProductCardProps) => {
   return (
     <AppProvider>
       <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
@@ -31,27 +35,21 @@ let testingLib: RenderResult;
 // test for the container page in dom
 describe('[ProductCard] ui rendering test', () => {
   it('should render outer component and snapshot matches', () => {
-    act(() => {
-      rendered = renderer.create(component()).toJSON();
-    });
+    rendered = renderer.create(component(props)).toJSON();
     expect(rendered).toMatchSnapshot();
   });
 
   it('should include button when "variant" is subscription', () => {
-    const Component = component({ variant: 'subscription' });
-    act(() => {
-      rendered = renderer.create(Component).toJSON();
-    });
+    const Component = component({ ...props, variant: Variant.Subscription });
+    rendered = renderer.create(Component).toJSON();
     testingLib = render(Component); // Todo: add SwitchToggle testID
   });
 
   it('should include summary title text when product card is pressed', () => {
-    const Component = component();
+    const Component = component(props);
     testingLib = render(Component);
-    act(() => {
-      rendered = renderer.create(Component).toJSON();
-      fireEvent.press(testingLib.getByTestId('productCard'));
-    });
+    rendered = renderer.create(Component).toJSON();
+    fireEvent.press(testingLib.getByTestId('productCard'));
     testingLib.getByTestId('summaryTitleText');
   });
 });
@@ -61,10 +59,8 @@ describe('[ProductCard] Interaction', () => {
 
   it('should simulate [notification Icon] click', () => {
     let cnt = 0;
-    const Component = component({
-      isNotificationEnable: true,
-      onClickNotification: () => cnt++,
-    });
+    const Component = component(
+      { ...props, isNotificationEnable: true, onClickNotification: () => cnt++ });
     testingLib = render(Component);
     act(() => {
       fireEvent.press(testingLib.getByTestId('notiOffIcon'));

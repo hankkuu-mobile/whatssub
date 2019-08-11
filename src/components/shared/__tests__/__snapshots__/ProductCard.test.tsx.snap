@@ -1,3 +1,280 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[ProductCard] ui rendering test should render outer component and snapshot matches 1`] = `null`;
+exports[`[ProductCard] ui rendering test should render outer component and snapshot matches 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="productCard"
+>
+  <View
+    isSummary={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": 15,
+          "display": "flex",
+          "height": 190,
+          "paddingBottom": 15,
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "paddingTop": 15,
+          "position": "relative",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Image
+      isSubscription={true}
+      source={
+        Object {
+          "uri": "url",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 20,
+            "marginBottom": 10,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "marginTop": 10,
+            "width": 75,
+          },
+        ]
+      }
+      testID="productImg"
+    />
+    <View
+      isSubscription={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "space-between",
+            "left": 22,
+            "position": "absolute",
+            "top": 15,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID="notiOnIcon"
+        >
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgba(2, 48, 89, 1)",
+              "borderRadius": 18,
+              "flexDirection": "row",
+              "height": 36,
+              "padding": 3,
+              "width": 72,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "left": 5,
+                  "position": "absolute",
+                  "top": -7,
+                }
+              }
+            >
+              
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 1)",
+                "borderRadius": 15,
+                "height": 30,
+                "transform": Array [
+                  Object {
+                    "translateX": 0,
+                  },
+                ],
+                "width": 30,
+              }
+            }
+          >
+            <View>
+              <Text />
+            </View>
+          </View>
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "left": 5,
+                  "position": "absolute",
+                  "top": -7,
+                }
+              }
+            >
+              Sub
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "spoqa-han-sans-bold",
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "marginTop": 17,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        netflix
+      </Text>
+      <Text
+        isSummary={false}
+        style={
+          Array [
+            Object {
+              "color": "rgb(255, 77, 108)",
+              "fontFamily": "spoqa-han-sans-regular",
+              "fontSize": 40,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="subscription"
+      >
+        D-0
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "spoqa-han-sans-bold",
+              "fontSize": 13,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        8월 10일에
+                  1,234원이 결제될 예정입니다.
+      </Text>
+    </View>
+  </View>
+</View>
+`;
