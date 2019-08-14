@@ -17,16 +17,16 @@ const WsubBottomTabBar = styled(BottomTabBar)`
 
 // Icons Components
 const HomeIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name="home" type="MaterialIcons" />;
+  <TabBarIcon focused={focused} name='home' type='MaterialIcons' />;
 
 const CalendarIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name="calendar" type="AntDesign" />;
+  <TabBarIcon focused={focused} name='calendar' type='AntDesign' />;
 
 const FavoriteIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name="favorite-border" type="MaterialIcons" />;
+  <TabBarIcon focused={focused} name='favorite-border' type='MaterialIcons' />;
 
 const SettingIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name="setting" type="AntDesign" />;
+  <TabBarIcon focused={focused} name='setting' type='AntDesign' />;
 
 /**
  * HOME STACK NAVIGATOR

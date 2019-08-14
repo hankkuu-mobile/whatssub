@@ -20,7 +20,7 @@ describe('[TabBarIcon] UI Render Test', () => {
   beforeEach(() => {
     props = createTestProps({ });
     component = (
-      <TabBarIcon {...props} testID="tabBarIcon" name="home" focused={false} type="MaterialIcons" />
+      <TabBarIcon {...props} testID='tabBarIcon' name='home' focused={false} type='MaterialIcons' />
     );
   });
 

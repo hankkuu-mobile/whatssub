@@ -20,8 +20,8 @@ const Story = () => {
       onClickEdit={() => {}}
       isNotificationEnable={isNotificationEnable1}
       isSubscribing={isSubscribing1}
-      name="netflix"
-      image="https://dummyimage.com/75x20/000/fff"
+      name='netflix'
+      image='https://dummyimage.com/75x20/000/fff'
       price={65000}
       currentMonthPaymentDate={new Date('2019-7-28')}
       variant={Variant.Subscription}

@@ -6,9 +6,12 @@ import { DefaultTheme } from 'styled-components';
 export interface Definition {
   kind: string;
   operation?: string;
-};
+}
 
-export enum Gender { MALE, FEMALE };
+export enum Gender {
+  MALE,
+  FEMALE,
+}
 
 export interface SocialInput {
   social: string;
@@ -32,24 +35,24 @@ export interface User {
   gender: Gender;
   social: String;
   verified: Boolean;
-  notifications: [Notification]
+  notifications: [Notification];
   // customServices: [CustomService]
   // userProducts: [UserProduct]
   // reviews: [Review]
-  created: Date
-  updated: Date
-  deleted: Date
+  created: Date;
+  updated: Date;
+  deleted: Date;
 }
 
 export interface AuthPayload {
-  token: string
-  user: User
+  token: string;
+  user: User;
 }
 
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
-};
+}
 
 export interface ScreenProps {
   theme: DefaultTheme;

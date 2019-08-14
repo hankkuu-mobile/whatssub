@@ -1,5 +1,7 @@
 import * as Font from 'expo-font';
+
 import React, { useEffect, useState } from 'react';
+
 import { ApolloProvider } from 'react-apollo';
 import { ApolloProvider as ApolloProviderHook } from '@apollo/react-hooks';
 import { AsyncStorage } from 'react-native';
@@ -11,7 +13,7 @@ import client from './apollo/Client';
 const App = () => {
   const [theme, setTheme] = useState<ThemeType>(ThemeType.LIGHT);
   const getCurrentThemeType = async () => {
-    const value = await AsyncStorage.getItem('theme') as ThemeType;
+    const value = (await AsyncStorage.getItem('theme')) as ThemeType;
     if (value && value !== ThemeType.LIGHT) {
       setTheme(value);
     }
@@ -19,10 +21,8 @@ const App = () => {
 
   useEffect(() => {
     Font.loadAsync({
-      'spoqa-han-sans-bold':
-        require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Bold.ttf'),
-      'spoqa-han-sans-regular':
-        require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Regular.ttf'),
+      'spoqa-han-sans-bold': require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Bold.ttf'),
+      'spoqa-han-sans-regular': require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Regular.ttf'),
     });
     getCurrentThemeType();
   }, []);

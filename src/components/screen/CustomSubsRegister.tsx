@@ -90,46 +90,46 @@ function CustomSubsRegister(props: Props) {
           onChangeServiceName={(name) => setServiceName(name)}/>
         <Seperator/>
         <ServiceItem
-          title="요금"
-          content="0원"
+          title='요금'
+          content='0원'
           editable
           contentStyle={{ color: colors.blue }}
         />
         <Seperator/>
         <ServiceItem
-          title="결제주기"
-          content="매 월"
+          title='결제주기'
+          content='매 월'
           showArrow
           onPress={() => {
             // Maybe need to select Modal.
           }}
         />
         <ServiceItem
-          title="만기일"
+          title='만기일'
           content={moment(expirationDate).format('YYYY년 M월 D일')}
           showArrow
           onPress={() => setIsPickingDate(true)}
         />
         <ServiceItem
-          title="이전 결제일"
-          content="10일"
+          title='이전 결제일'
+          content='10일'
           showArrow
           onPress={() => {
             // Maybe need to select Modal.
           }}
         />
         <ServiceItem
-          title="결제전 알림"
-          content="3일 전"
+          title='결제전 알림'
+          content='3일 전'
           showArrow
           onPress={() => {
             // Maybe need to select Modal.
           }}
         />
         <Seperator/>
-        <Memoboard placeholder="메모" multiline style={{ textAlignVertical: 'top' }}/>
+        <Memoboard placeholder='메모' multiline style={{ textAlignVertical: 'top' }}/>
         <Modal
-          animationType="fade"
+          animationType='fade'
           transparent={true}
           visible={isPickingDate}
           presentationStyle='overFullScreen'
@@ -140,8 +140,8 @@ function CustomSubsRegister(props: Props) {
             </TouchableWithoutFeedback>
             <SafeAreaView>
               <DatePicker
-                title="만기일"
-                description="만기일을 선택해주세요."
+                title='만기일'
+                description='만기일을 선택해주세요.'
                 date={expirationDate}
                 onDateChange={(date) => setExpirationDate(date)}
               />

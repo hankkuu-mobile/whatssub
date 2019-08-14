@@ -164,7 +164,7 @@ const ProductCard: FC<ProductCardProps> = ({
     ? <TouchableOpacity onPress={onPressNotiIcon} testID='notiOffIcon'>
       <IconImage source={IC_NOTI_OFF}/>
     </TouchableOpacity>
-    : <TouchableOpacity onPress={onPressNotiIcon} testID="notiOnIcon">
+    : <TouchableOpacity onPress={onPressNotiIcon} testID='notiOnIcon'>
       <IconImage source={IC_NOTI_ON}/>
     </TouchableOpacity>;
 

@@ -23,12 +23,8 @@ const FakeChild = () => {
 
   return (
     <View>
-      <Text testID="TEXT">{JSON.stringify(state, null, 2)}</Text>
-      <Button
-        testID="BUTTON"
-        onPress={() => changeTheme()}
-        title="Button"
-      />
+      <Text testID='TEXT'>{JSON.stringify(state, null, 2)}</Text>
+      <Button testID='BUTTON' onPress={() => changeTheme()} title='Button' />
     </View>
   );
 };

@@ -68,7 +68,7 @@ export default function AuthLoading(props: Props) {
     return (
       <Container>
         <StyledSplashImage
-          testID="SPLASH_IMAGE"
+          testID='SPLASH_IMAGE'
           source={IMG_GIF_SPLASH}
           resizeMode='contain'
           onLoadEnd={() => {

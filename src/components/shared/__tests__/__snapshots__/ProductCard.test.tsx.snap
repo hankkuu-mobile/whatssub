@@ -258,7 +258,7 @@ exports[`[ProductCard] ui rendering test should render outer component and snaps
         }
         variant="subscription"
       >
-        D-31
+        D-30
       </Text>
       <Text
         style={

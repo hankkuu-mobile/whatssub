@@ -74,9 +74,9 @@ function Shared(props: Props) {
           custom
             ? <ServiceNameInput
               ref={titleRef}
-              placeholder="서비스명을 직접 입력해주세요."
+              placeholder='서비스명을 직접 입력해주세요.'
               value={serviceName}
-              placeholderTextColor="black"
+              placeholderTextColor='black'
               onChangeText={props.onChangeServiceName}/>
             : <ServiceName>{serviceName}</ServiceName>
         }

@@ -1782,7 +1782,7 @@ exports[`[DatePicker] render renders without crashing 1`] = `
                       "height": 35,
                     },
                     Object {
-                      "opacity": 1,
+                      "opacity": 0.2,
                     },
                   ]
                 }
@@ -1815,7 +1815,7 @@ exports[`[DatePicker] render renders without crashing 1`] = `
                       "height": 35,
                     },
                     Object {
-                      "opacity": 0.2,
+                      "opacity": 1,
                     },
                   ]
                 }
