@@ -232,7 +232,7 @@ exports[`[ProductCard] ui rendering test should render outer component and snaps
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "#323b43",
               "fontFamily": "spoqa-han-sans-bold",
               "fontSize": 16,
               "fontWeight": "bold",
@@ -258,7 +258,7 @@ exports[`[ProductCard] ui rendering test should render outer component and snaps
         }
         variant="subscription"
       >
-        D-0
+        D-31
       </Text>
       <Text
         style={
@@ -271,7 +271,7 @@ exports[`[ProductCard] ui rendering test should render outer component and snaps
           ]
         }
       >
-        8월 10일에
+        9월 13일에
                   1,234원이 결제될 예정입니다.
       </Text>
     </View>

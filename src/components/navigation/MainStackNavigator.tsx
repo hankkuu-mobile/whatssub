@@ -5,6 +5,7 @@ import {
   createStackNavigator,
 } from 'react-navigation';
 
+import CustomSubsRegister from '../screen/CustomSubsRegister';
 import Main from '../screen/Main';
 import React from 'react';
 import { ScreenProps } from '../../types';
@@ -24,6 +25,9 @@ const routeConfig: NavigationRouteConfigMap = {
       title: 'Setting',
     },
     path: 'setting',
+  },
+  CustomSubsRegister: {
+    screen: CustomSubsRegister,
   },
 };
 

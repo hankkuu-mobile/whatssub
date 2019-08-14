@@ -1,6 +1,7 @@
 import './rn-addons';
 import { addDecorator, configure, getStorybookUI } from '@storybook/react-native';
 import { AppRegistry } from 'react-native';
+
 import { setupGlobalDecorators } from './decorators';
 
 // import stories

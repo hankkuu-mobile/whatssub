@@ -67,7 +67,7 @@ describe('[Temp] render', () => {
     props = createTestProps({});
     client = createClient(mocks);
     component = (
-      <AppProvider>
+      <AppProvider doNotWaitFont>
         <ThemeProvider theme={createTheme()}>
           <ApolloProvider client={client}>
             <Temp {...props} />

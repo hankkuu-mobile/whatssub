@@ -1,0 +1,3053 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[CustomSubsRegister] screen renders without crashing 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#f9fafb",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#f9fafb",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 86,
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+            style={
+              Array [
+                Object {
+                  "maxHeight": 86,
+                  "width": 750,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            onChangeText={[Function]}
+            placeholder="서비스명을 직접 입력해주세요."
+            placeholderTextColor="black"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "fontFamily": "spoqa-han-sans-bold",
+                  "fontSize": 16,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value="myService"
+          />
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Object {
+                  "height": 16,
+                  "marginHorizontal": 4,
+                  "width": 14,
+                }
+              }
+            />
+          </View>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#99a2aa",
+                "fontFamily": "spoqa-han-sans-regular",
+                "fontSize": 14,
+                "marginBottom": 20,
+                "marginTop": 13,
+              },
+            ]
+          }
+        >
+          서비스에 대한 요금과 결제정보를 입력해주세요.
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 12,
+            },
+          ]
+        }
+      />
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "row",
+                "height": 50,
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+          >
+            요금
+          </Text>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            onChangeText={null}
+            pointerEvents="auto"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "color": "#99a2aa",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+                Object {
+                  "color": "#4981f2",
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            0원
+          </TextInput>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 12,
+            },
+          ]
+        }
+      />
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "row",
+                "height": 50,
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+          >
+            결제주기
+          </Text>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            editable={false}
+            onChangeText={null}
+            pointerEvents="none"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "color": "#99a2aa",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            매 월
+          </TextInput>
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 13,
+                  "marginLeft": 11,
+                  "width": 8,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "row",
+                "height": 50,
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+          >
+            만기일
+          </Text>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            editable={false}
+            onChangeText={null}
+            pointerEvents="none"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "color": "#99a2aa",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            2019년 8월 8일
+          </TextInput>
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 13,
+                  "marginLeft": 11,
+                  "width": 8,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "row",
+                "height": 50,
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+          >
+            이전 결제일
+          </Text>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            editable={false}
+            onChangeText={null}
+            pointerEvents="none"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "color": "#99a2aa",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            10일
+          </TextInput>
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 13,
+                  "marginLeft": 11,
+                  "width": 8,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "flexDirection": "row",
+                "height": 50,
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+          >
+            결제전 알림
+          </Text>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <TextInput
+            allowFontScaling={true}
+            editable={false}
+            onChangeText={null}
+            pointerEvents="none"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "color": "#99a2aa",
+                  "fontFamily": "spoqa-han-sans-regular",
+                  "fontSize": 16,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            3일 전
+          </TextInput>
+          <Image
+            source={1}
+            style={
+              Array [
+                Object {
+                  "height": 13,
+                  "marginLeft": 11,
+                  "width": 8,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 12,
+            },
+          ]
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        multiline={true}
+        placeholder="메모"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#ffffff",
+              "fontFamily": "spoqa-han-sans-regular",
+              "fontSize": 16,
+              "minHeight": 130,
+              "paddingBottom": 13,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 13,
+              "width": "100%",
+            },
+            Object {
+              "textAlignVertical": "top",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+      />
+      <Modal
+        animationType="fade"
+        hardwareAccelerated={false}
+        presentationStyle="overFullScreen"
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgba(0,0,0,0.5)",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "justifyContent": "flex-end",
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <RCTSafeAreaView
+            emulateUnlessSupported={true}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#ffffff",
+                    "borderTopLeftRadius": 20,
+                    "borderTopRightRadius": 20,
+                    "height": 255,
+                    "width": 750,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomColor": "#e6eaee",
+                      "borderBottomWidth": 1,
+                      "height": 90,
+                      "width": 750,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "spoqa-han-sans-bold",
+                        "fontSize": 16,
+                        "lineHeight": 19,
+                        "marginTop": 21,
+                      },
+                    ]
+                  }
+                >
+                  만기일
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "spoqa-han-sans-regular",
+                        "fontSize": 14,
+                        "marginTop": 14,
+                      },
+                    ]
+                  }
+                >
+                  만기일을 선택해주세요.
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexBasis": 0,
+                      "flexDirection": "row",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "space-around",
+                      "paddingBottom": 0,
+                      "paddingLeft": 40,
+                      "paddingRight": 40,
+                      "paddingTop": 0,
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": 105,
+                        "overflow": "hidden",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderBottomColor": "transparent",
+                          "borderBottomWidth": 0.5,
+                          "borderTopColor": "transparent",
+                          "borderTopWidth": 0.5,
+                          "height": 35,
+                          "position": "absolute",
+                          "top": 35,
+                          "width": 750,
+                        }
+                      }
+                    />
+                    <RCTScrollView
+                      bounces={false}
+                      onMomentumScrollBegin={[Function]}
+                      onMomentumScrollEnd={[Function]}
+                      onScrollBeginDrag={[Function]}
+                      onScrollEndDrag={[Function]}
+                      showsVerticalScrollIndicator={false}
+                    >
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2009
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2010
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2011
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2012
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2013
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2014
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2015
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2016
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2017
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2018
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 1,
+                                },
+                              ]
+                            }
+                          >
+                            2019
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2020
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2021
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2022
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2023
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2024
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2025
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2026
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2027
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2028
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2029
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                      </View>
+                    </RCTScrollView>
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "spoqa-han-sans-regular",
+                          "fontSize": 24,
+                        },
+                      ]
+                    }
+                  >
+                    년
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": 105,
+                        "overflow": "hidden",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderBottomColor": "transparent",
+                          "borderBottomWidth": 0.5,
+                          "borderTopColor": "transparent",
+                          "borderTopWidth": 0.5,
+                          "height": 35,
+                          "position": "absolute",
+                          "top": 35,
+                          "width": 750,
+                        }
+                      }
+                    />
+                    <RCTScrollView
+                      bounces={false}
+                      onMomentumScrollBegin={[Function]}
+                      onMomentumScrollEnd={[Function]}
+                      onScrollBeginDrag={[Function]}
+                      onScrollEndDrag={[Function]}
+                      showsVerticalScrollIndicator={false}
+                    >
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            1
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            3
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            4
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            5
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            6
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            7
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 1,
+                                },
+                              ]
+                            }
+                          >
+                            8
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            9
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            10
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            11
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            12
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                      </View>
+                    </RCTScrollView>
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "spoqa-han-sans-regular",
+                          "fontSize": 24,
+                        },
+                      ]
+                    }
+                  >
+                    월
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": 105,
+                        "overflow": "hidden",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderBottomColor": "transparent",
+                          "borderBottomWidth": 0.5,
+                          "borderTopColor": "transparent",
+                          "borderTopWidth": 0.5,
+                          "height": 35,
+                          "position": "absolute",
+                          "top": 35,
+                          "width": 750,
+                        }
+                      }
+                    />
+                    <RCTScrollView
+                      bounces={false}
+                      onMomentumScrollBegin={[Function]}
+                      onMomentumScrollEnd={[Function]}
+                      onScrollBeginDrag={[Function]}
+                      onScrollEndDrag={[Function]}
+                      showsVerticalScrollIndicator={false}
+                    >
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            1
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            2
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            3
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            4
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            5
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            6
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            7
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 1,
+                                },
+                              ]
+                            }
+                          >
+                            8
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            9
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            10
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            11
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            12
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            13
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            14
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            15
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            16
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            17
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            18
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            19
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            20
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            21
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            22
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            23
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            24
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            25
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            26
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            27
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            28
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            29
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            30
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 30,
+                                "justifyContent": "center",
+                              },
+                              Object {
+                                "height": 35,
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "#ffffff",
+                                  "color": "#4981f2",
+                                  "fontFamily": "spoqa-han-sans-regular",
+                                  "fontSize": 24,
+                                  "height": 35,
+                                },
+                                Object {
+                                  "opacity": 0.2,
+                                },
+                              ]
+                            }
+                          >
+                            31
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "height": 35,
+                            }
+                          }
+                        />
+                      </View>
+                    </RCTScrollView>
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "spoqa-han-sans-regular",
+                          "fontSize": 24,
+                        },
+                      ]
+                    }
+                  >
+                    일
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </Modal>
+    </View>
+  </View>
+</RCTScrollView>
+`;

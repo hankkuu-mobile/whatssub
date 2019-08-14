@@ -2,6 +2,7 @@ import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 import React, { Component } from 'react';
 import {
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 
@@ -27,7 +28,13 @@ interface Props {
 function Page(props: Props) {
   return (
     <Container>
-      <StyledText testID='myText'>dooboolab</StyledText>
+      <TouchableOpacity
+        onPress={() => {
+          props.navigation.navigate('CustomSubsRegister');
+        }}
+      >
+        <StyledText testID='myText'>CustomSubsRegister screen</StyledText>
+      </TouchableOpacity>
     </Container>
   );
 }

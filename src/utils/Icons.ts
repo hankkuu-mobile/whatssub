@@ -7,3 +7,6 @@ export const IC_NOTI_OFF = require('../../assets/icons/alarmOff.png');
 export const IC_EDIT = require('../../assets/icons/edit.png');
 export const IC_ADD = require('../../assets/icons/add.png');
 export const IC_ADD_SERVICE = require('../../assets/icons/addService.png');
+export const IC_WRITE = require('../../assets/icons/icWrite.png');
+export const IC_LIST_BTN = require('../../assets/icons/icListBtn.png');
+export const IC_BACK = require('../../assets/icons/back.png');

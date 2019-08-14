@@ -16,18 +16,34 @@ exports[`[Main] renders without crashing 1`] = `
     ]
   }
 >
-  <Text
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "color": "blue",
-          "fontSize": 16,
-        },
-      ]
+      Object {
+        "opacity": 1,
+      }
     }
-    testID="myText"
   >
-    dooboolab
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "blue",
+            "fontSize": 16,
+          },
+        ]
+      }
+      testID="myText"
+    >
+      CustomSubsRegister screen
+    </Text>
+  </View>
 </View>
 `;

@@ -1,1 +1,2 @@
 import './AuthLoading';
+import './CustomSubsRegister';

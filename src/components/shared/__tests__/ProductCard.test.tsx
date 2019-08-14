@@ -17,12 +17,12 @@ const props = {
   isNotificationEnable: false,
   onClickNotification: () => {},
   price: 1234,
-  currentMonthPaymentDate: new Date(),
+  currentMonthPaymentDate: new Date(2019, 8, 13),
 };
 
 const component = (props: ProductCardProps) => {
   return (
-    <AppProvider>
+    <AppProvider doNotWaitFont>
       <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
         <ProductCard {...props}/>
       </ThemeProvider>

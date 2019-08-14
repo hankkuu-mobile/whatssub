@@ -44,6 +44,6 @@ describe('[Main] Interaction', () => {
 
   it('should render [Text] with value "myText"', () => {
     const textInstance = testing.getByTestId('myText');
-    expect(textInstance.props.children).toEqual('dooboolab');
+    expect(textInstance.props.children).toEqual('CustomSubsRegister screen');
   });
 });

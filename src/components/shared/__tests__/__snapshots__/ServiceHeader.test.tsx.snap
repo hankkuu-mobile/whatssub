@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceHeader] render renders without crashing 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 86,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Array [
+          Object {
+            "maxHeight": 86,
+            "width": 750,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "spoqa-han-sans-bold",
+            "fontSize": 16,
+          },
+        ]
+      }
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#99a2aa",
+          "fontFamily": "spoqa-han-sans-regular",
+          "fontSize": 14,
+          "marginBottom": 20,
+          "marginTop": 13,
+        },
+      ]
+    }
+  >
+    서비스에 대한 요금과 결제정보를 입력해주세요.
+  </Text>
+</View>
+`;

@@ -20,9 +20,9 @@ const App = () => {
   useEffect(() => {
     Font.loadAsync({
       'spoqa-han-sans-bold':
-        require('../assets/fonts/SpocaHanSans/SpoqaHanSans-Bold.ttf'),
+        require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Bold.ttf'),
       'spoqa-han-sans-regular':
-        require('../assets/fonts/SpocaHanSans/SpoqaHanSans-Regular.ttf'),
+        require('../assets/fonts/SpoqaHanSans/SpoqaHanSans-Regular.ttf'),
     });
     getCurrentThemeType();
   }, []);

@@ -8,6 +8,7 @@ import {
   fireEvent,
   render,
   wait,
+  waitForElement,
 } from '@testing-library/react-native';
 
 import PropTypes from 'prop-types';
@@ -48,12 +49,12 @@ describe('[AppProvider] rendering test', () => {
 
 describe('[AppProvider] interactions', () => {
   Component = (
-    <AppProvider>
+    <AppProvider doNotWaitFont>
       <FakeChild />
     </AppProvider>
   );
 
-  it('initial theme setup', () => {
+  it('initial theme setup', async () => {
     const { getByTestId } = render(Component);
     const text = getByTestId('TEXT');
     expect(JSON.parse(text.children[0] as string)).toStrictEqual({
@@ -61,21 +62,21 @@ describe('[AppProvider] interactions', () => {
     });
   });
 
-  it('test changeTheme()', () => {
+  it('test changeTheme()', async () => {
     const { getByTestId } = render(Component);
+    const text = getByTestId('TEXT');
     act(() => {
       fireEvent.press(getByTestId('BUTTON'));
     });
-    const text = getByTestId('TEXT');
     expect(JSON.parse(text.children[0] as string)).toStrictEqual({
       theme: ThemeType.DARK,
     });
   });
 
-  it('set initial theme by props()', () => {
+  it('set initial theme by props()', async () => {
     const type = ThemeType.DARK;
     const ComponentWithProps = (
-      <AppProvider theme={type}>
+      <AppProvider theme={type} doNotWaitFont>
         <FakeChild />
       </AppProvider>
     );
@@ -87,19 +88,19 @@ describe('[AppProvider] interactions', () => {
     });
   });
 
-  it('changeTheme() after setting initial theme by props()', () => {
+  it('changeTheme() after setting initial theme by props()', async () => {
     const type = ThemeType.DARK;
     const ComponentWithProps = (
-      <AppProvider theme={type}>
+      <AppProvider theme={type} doNotWaitFont>
         <FakeChild />
       </AppProvider>
     );
 
     const { getByTestId } = render(ComponentWithProps);
+    const text = getByTestId('TEXT');
     act(() => {
       fireEvent.press(getByTestId('BUTTON'));
     });
-    const text = getByTestId('TEXT');
     expect(JSON.parse(text.children[0] as string)).toStrictEqual({
       theme: ThemeType.LIGHT,
     });

@@ -11526,6 +11526,10 @@ react-native-modal@^9.0.0:
     prop-types "^15.6.2"
     react-native-animatable "^1.2.4"
 
+"react-native-picker-scrollview@https://github.com/JongtaekChoi/react-native-picker-scrollview.git":
+  version "1.0.0"
+  resolved "https://github.com/JongtaekChoi/react-native-picker-scrollview.git#067d6aa23ddcf914b7427fc3438e634fb8551532"
+
 react-native-safe-area-view@^0.14.1:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.14.5.tgz#eeded66bbeb0807f0a7f5f449e7fb2871f7ecf76"

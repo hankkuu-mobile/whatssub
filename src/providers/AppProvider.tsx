@@ -1,6 +1,6 @@
 import * as Font from 'expo-font';
 
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 
 import { AsyncStorage } from 'react-native';
 import { ThemeType } from '../types';
@@ -22,6 +22,7 @@ interface ChangeThemeTypeAction {
 interface Props {
   theme?: ThemeType;
   children?: any;
+  doNotWaitFont?: boolean;
 }
 
 interface State {
@@ -57,6 +58,7 @@ const reducer = (state: State, action: ChangeThemeTypeAction) => {
 
 function AppProvider(props: Props) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [fontLoading, setFontLoading] = useState(true);
 
   // by encapsulating dispatch, it is easier to use (such as passing through screenProps)
   const changeTheme: (theme?: ThemeType) => void = (theme) => {
@@ -78,11 +80,16 @@ function AppProvider(props: Props) {
     const value = (await AsyncStorage.getItem('theme')) as ThemeType;
     value && changeTheme(value);
   };
-  useEffect(() => {
-    Font.loadAsync({
-      'spoqa-han-sans-bold': require('../../assets/fonts/SpocaHanSans/SpoqaHanSans-Bold.ttf'),
-      'spoqa-han-sans-regular': require('../../assets/fonts/SpocaHanSans/SpoqaHanSans-Regular.ttf'),
+  const loadFonts = async () => {
+    await Font.loadAsync({
+      'spoqa-han-sans-bold': require('../../assets/fonts/SpoqaHanSans/SpoqaHanSans-Bold.ttf'),
+      'spoqa-han-sans-regular': require('../../assets/fonts/SpoqaHanSans/SpoqaHanSans-Regular.ttf'),
     });
+
+    setFontLoading(false);
+  };
+  useEffect(() => {
+    loadFonts();
     getCurrentThemeType();
   }, []);
 
@@ -97,7 +104,7 @@ function AppProvider(props: Props) {
         changeTheme,
       }}
     >
-      {props.children}
+      {fontLoading && !props.doNotWaitFont ? null : props.children}
     </AppContext.Provider>
   );
 }

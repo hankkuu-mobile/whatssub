@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceItem] render renders without crashing 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "flexDirection": "row",
+          "height": 50,
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#323b43",
+            "fontFamily": "spoqa-han-sans-regular",
+            "fontSize": 16,
+          },
+        ]
+      }
+    >
+      제목
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <TextInput
+      allowFontScaling={true}
+      editable={false}
+      onChangeText={null}
+      pointerEvents="none"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "color": "#99a2aa",
+            "fontFamily": "spoqa-han-sans-regular",
+            "fontSize": 16,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    >
+      내용
+    </TextInput>
+  </View>
+</View>
+`;

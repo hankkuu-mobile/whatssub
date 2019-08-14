@@ -33,7 +33,7 @@ const createTestProps = (obj: object) => ({
 
 const props: any = createTestProps({});
 const Component = (
-  <AppProvider>
+  <AppProvider doNotWaitFont>
     <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
       <Intro
         {...props}
@@ -45,7 +45,7 @@ const Component = (
   </AppProvider>
 );
 const RTLComponent = (props) => (
-  <AppProvider>
+  <AppProvider doNotWaitFont>
     <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
       <Intro
         {...props}
