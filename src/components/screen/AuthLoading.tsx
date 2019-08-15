@@ -1,5 +1,6 @@
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
 import React, { useState } from 'react';
+
 import { Asset } from 'expo-asset';
 import { AsyncStorage } from 'react-native';
 import { IMG_GIF_SPLASH } from '../../utils/Images';
@@ -84,5 +85,5 @@ export default function AuthLoading(props: Props) {
     );
   }
 
-  return (<Container />);
-};
+  return <Container />;
+}

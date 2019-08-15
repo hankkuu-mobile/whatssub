@@ -32,7 +32,7 @@
     "apollo-link-context": "^1.0.18",
     "apollo-link-ws": "^1.0.18",
     "apollo-utilities": "^1.3.2",
-    "dooboo-native-widgets": "^0.2.3",
+    "dooboo-native-widgets": "^0.2.8",
     "expo": "^34.0.4",
     "expo-app-auth": "^6.0.0",
     "expo-constants": "^6.0.0",

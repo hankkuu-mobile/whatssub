@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 import React, { Component, useEffect, useState } from 'react';
+
 import DatePicker from '../shared/DatePicker';
 import { IC_BACK } from '../../utils/Icons';
 import ServiceHeader from '../shared/ServiceHeader';
@@ -49,25 +50,27 @@ const BackImage = styled.Image`
 const ModalContainer = styled.View`
   flex: 1;
   justify-content: flex-end;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 interface Props {
-  navigation?: NavigationScreenProp<any, any>
-  serviceName?: string
-  standardDate?: Date
+  navigation?: NavigationScreenProp<any, any>;
+  serviceName?: string;
+  standardDate?: Date;
 }
 
-function RegisterBtn(props: {submittable}) {
+function RegisterBtn(props: { submittable }) {
   const { submittable } = props;
   return (
     <TouchableOpacity>
       <RegisterText
         style={{
-          color: submittable ? colors.highlightLight : colors.textSecondaryLight,
+          color: submittable
+            ? colors.highlightLight
+            : colors.textSecondaryLight,
         }}
       >
-등록
+        등록
       </RegisterText>
     </TouchableOpacity>
   );
@@ -76,10 +79,14 @@ function RegisterBtn(props: {submittable}) {
 function CustomSubsRegister(props: Props) {
   const [valid, setValid] = useState(false);
   const [serviceName, setServiceName] = useState(props.serviceName || '');
-  const [expirationDate, setExpirationDate] = useState(props.standardDate || new Date());
+  const [expirationDate, setExpirationDate] = useState(
+    props.standardDate || new Date(),
+  );
   const [isPickingDate, setIsPickingDate] = useState(false);
   useEffect(() => {
-    props.navigation.setParams({ submittable: (serviceName && serviceName.length > 0) });
+    props.navigation.setParams({
+      submittable: serviceName && serviceName.length > 0,
+    });
   }, [serviceName]);
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.backgroundLight }}>
@@ -87,15 +94,16 @@ function CustomSubsRegister(props: Props) {
         <ServiceHeader
           custom
           serviceName={serviceName}
-          onChangeServiceName={(name) => setServiceName(name)}/>
-        <Seperator/>
+          onChangeServiceName={(name) => setServiceName(name)}
+        />
+        <Seperator />
         <ServiceItem
           title='요금'
           content='0원'
           editable
           contentStyle={{ color: colors.blue }}
         />
-        <Seperator/>
+        <Seperator />
         <ServiceItem
           title='결제주기'
           content='매 월'
@@ -126,8 +134,12 @@ function CustomSubsRegister(props: Props) {
             // Maybe need to select Modal.
           }}
         />
-        <Seperator/>
-        <Memoboard placeholder='메모' multiline style={{ textAlignVertical: 'top' }}/>
+        <Seperator />
+        <Memoboard
+          placeholder='메모'
+          multiline
+          style={{ textAlignVertical: 'top' }}
+        />
         <Modal
           animationType='fade'
           transparent={true}
@@ -135,8 +147,11 @@ function CustomSubsRegister(props: Props) {
           presentationStyle='overFullScreen'
         >
           <ModalContainer>
-            <TouchableWithoutFeedback style={{ flex: 1 }} onPress={() => setIsPickingDate(false)}>
-              <View style={{ flex: 1 }}/>
+            <TouchableWithoutFeedback
+              style={{ flex: 1 }}
+              onPress={() => setIsPickingDate(false)}
+            >
+              <View style={{ flex: 1 }} />
             </TouchableWithoutFeedback>
             <SafeAreaView>
               <DatePicker
@@ -154,13 +169,15 @@ function CustomSubsRegister(props: Props) {
 }
 
 CustomSubsRegister.navigationOptions = ({ navigation }) => {
-  return ({
+  return {
     headerStyle: {
       elevation: 0, // remove shadow on Android
       shadowOpacity: 0, // remove shadow on iOS
       borderWidth: 1,
     },
-    headerRight: <RegisterBtn submittable={navigation.getParam('submittable')}/>,
+    headerRight: (
+      <RegisterBtn submittable={navigation.getParam('submittable')} />
+    ),
     headerTitle: '',
     headerLeft: (
       <TouchableOpacity
@@ -168,8 +185,9 @@ CustomSubsRegister.navigationOptions = ({ navigation }) => {
         onPress={() => navigation.goBack()}
       >
         <BackImage source={IC_BACK} />
-      </TouchableOpacity>),
-  });
+      </TouchableOpacity>
+    ),
+  };
 };
 
 export default CustomSubsRegister;
