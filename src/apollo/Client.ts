@@ -1,5 +1,6 @@
 import { ApolloClient, HttpLink, InMemoryCache } from 'apollo-boost';
 import { defaults, resolvers } from './LocalState';
+
 import { AsyncStorage } from 'react-native';
 import { Definition } from '../types';
 import { GRAPHQL_URL } from '../apis/urls';

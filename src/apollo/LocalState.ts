@@ -6,7 +6,10 @@ export const defaults = {
 
 export const resolvers = {
   Mutation: {
-    userLogin: (_: any, { token }: { token: string }, { cache }: { cache: any }
+    userLogin: (
+      _: any,
+      { token }: { token: string },
+      { cache }: { cache: any },
     ) => {
       cookie.set('token', token);
       cache.writeData({

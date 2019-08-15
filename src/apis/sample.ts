@@ -1,26 +1,28 @@
 import { ROOT_URL } from './urls';
 
-export const sample =
-  async (body: object, signal?: AbortController['signal']) => {
-    try {
-      let res: any = await fetch(`${ROOT_URL}/sample`, {
-        signal,
-        method: 'POST',
-        headers: new Headers({
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        }),
-        body: JSON.stringify(body),
-      });
+export const sample = async (
+  body: object,
+  signal?: AbortController['signal'],
+) => {
+  try {
+    let res: any = await fetch(`${ROOT_URL}/sample`, {
+      signal,
+      method: 'POST',
+      headers: new Headers({
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      }),
+      body: JSON.stringify(body),
+    });
 
-      if (res) {
-        res = JSON.parse(res._bodyInit);
-        return res;
-      }
-      return null;
-    } catch (err) {
-      // console.log('googleLogin err');
-      // console.log(err);
-      throw new Error(err);
+    if (res) {
+      res = JSON.parse(res._bodyInit);
+      return res;
     }
-  };
+    return null;
+  } catch (err) {
+    // console.log('googleLogin err');
+    // console.log(err);
+    throw new Error(err);
+  }
+};

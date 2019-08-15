@@ -23,4 +23,4 @@ export default function useInterval(fn: Function | undefined, delay: number) {
     }
     return null;
   }, [delay]);
-};
+}

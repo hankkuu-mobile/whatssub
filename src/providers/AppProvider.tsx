@@ -41,9 +41,7 @@ const reducer = (state: State, action: ChangeThemeTypeAction) => {
         return {
           ...state,
           theme:
-            state.theme === ThemeType.LIGHT
-              ? ThemeType.DARK
-              : ThemeType.LIGHT,
+            state.theme === ThemeType.LIGHT ? ThemeType.DARK : ThemeType.LIGHT,
         };
       }
       // else change it with payload.theme

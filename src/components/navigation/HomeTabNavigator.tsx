@@ -1,6 +1,11 @@
+import {
+  BottomTabNavigatorConfig,
+  NavigationContainer,
+  NavigationRouteConfigMap,
+  createBottomTabNavigator,
+  createStackNavigator,
+} from 'react-navigation';
 
-import { BottomTabNavigatorConfig, NavigationContainer, NavigationRouteConfigMap,
-  createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import { BottomTabBar } from 'react-navigation-tabs';
 import Home from '../screen/Home';
 import HomeCalendar from '../screen/HomeCalendar';
@@ -16,17 +21,21 @@ const WsubBottomTabBar = styled(BottomTabBar)`
 `;
 
 // Icons Components
-const HomeIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name='home' type='MaterialIcons' />;
+const HomeIcon = ({ focused }: { focused: boolean }) => (
+  <TabBarIcon focused={focused} name='home' type='MaterialIcons' />
+);
 
-const CalendarIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name='calendar' type='AntDesign' />;
+const CalendarIcon = ({ focused }: { focused: boolean }) => (
+  <TabBarIcon focused={focused} name='calendar' type='AntDesign' />
+);
 
-const FavoriteIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name='favorite-border' type='MaterialIcons' />;
+const FavoriteIcon = ({ focused }: { focused: boolean }) => (
+  <TabBarIcon focused={focused} name='favorite-border' type='MaterialIcons' />
+);
 
-const SettingIcon = ({ focused } : { focused: boolean }) =>
-  <TabBarIcon focused={focused} name='setting' type='AntDesign' />;
+const SettingIcon = ({ focused }: { focused: boolean }) => (
+  <TabBarIcon focused={focused} name='setting' type='AntDesign' />
+);
 
 /**
  * HOME STACK NAVIGATOR
@@ -83,7 +92,7 @@ const routeConfig: NavigationRouteConfigMap = {
   HomeSettingStack,
 };
 
-const tabBar = (props: any) => (<WsubBottomTabBar {...props} />);
+const tabBar = (props: any) => <WsubBottomTabBar {...props} />;
 
 const bottomNavigatorConfig: BottomTabNavigatorConfig = {
   initialRouteName: 'HomeStack',
@@ -96,8 +105,10 @@ const bottomNavigatorConfig: BottomTabNavigatorConfig = {
 /**
  * Create Bottom Tab Navigator
  */
-const RootTabNavigator: NavigationContainer =
-createBottomTabNavigator(routeConfig, bottomNavigatorConfig);
+const RootTabNavigator: NavigationContainer = createBottomTabNavigator(
+  routeConfig,
+  bottomNavigatorConfig,
+);
 
 interface Props {
   navigation?: any;

@@ -4,6 +4,7 @@ import {
   StackNavigatorConfig,
   createStackNavigator,
 } from 'react-navigation';
+
 import IntroScreen from '../screen/Intro';
 import React from 'react';
 import { ScreenProps } from '../../types';
@@ -29,10 +30,15 @@ const navigatorConfig: StackNavigatorConfig = {
   initialRouteName: 'Intro',
   // header: null,
   // headerMode: 'none',
-  navigationOptions: ({ navigation, screenProps }
-    : { navigation: any, screenProps: any }) => {
+  navigationOptions: ({
+    navigation,
+    screenProps,
+  }: {
+    navigation: any;
+    screenProps: any;
+  }) => {
     const { theme } = screenProps;
-    return ({
+    return {
       headerStyle: {
         backgroundColor: theme.background,
         borderBottomColor: 'transparent',
@@ -41,7 +47,7 @@ const navigatorConfig: StackNavigatorConfig = {
       },
       headerTitleStyle: { color: theme.fontColor },
       headerTintColor: theme.tintColor,
-    });
+    };
   },
 };
 

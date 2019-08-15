@@ -35,10 +35,15 @@ const navigatorConfig: StackNavigatorConfig = {
   initialRouteName: 'Setting',
   // header: null,
   // headerMode: 'none',
-  navigationOptions: ({ navigation, screenProps }
-    : { navigation: any, screenProps: any}) => {
+  navigationOptions: ({
+    navigation,
+    screenProps,
+  }: {
+    navigation: any;
+    screenProps: any;
+  }) => {
     const { theme } = screenProps;
-    return ({
+    return {
       headerStyle: {
         backgroundColor: theme.background,
         borderBottomColor: 'transparent',
@@ -47,12 +52,14 @@ const navigatorConfig: StackNavigatorConfig = {
       },
       headerTitleStyle: { color: theme.fontColor },
       headerTintColor: theme.tintColor,
-    });
+    };
   },
 };
 
-const RootStackNavigator: NavigationContainer =
-  createStackNavigator(routeConfig, navigatorConfig);
+const RootStackNavigator: NavigationContainer = createStackNavigator(
+  routeConfig,
+  navigatorConfig,
+);
 
 interface Props {
   navigation?: any;

@@ -2,12 +2,7 @@ import * as AppAuth from 'expo-app-auth';
 import * as Facebook from 'expo-facebook';
 import * as GoogleSignIn from 'expo-google-sign-in';
 
-import {
-  AsyncStorage,
-  Platform,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { AsyncStorage, Platform, TouchableOpacity, View } from 'react-native';
 import { AuthPayload, Gender, ScreenProps, SocialInput } from '../../types';
 import { IC_FACEBOOK, IC_GOOGLE, IC_LOGO, IC_SLASH } from '../../utils/Icons';
 import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
@@ -109,8 +104,9 @@ interface Props {
   navigation?: NavigationScreenProp<NavigationStateRoute<any>>;
 }
 
-export const titleArray =
-  _range(5).map((index: number) => getString(`INTRO_TITLE_${index + 1}`));
+export const titleArray = _range(5).map((index: number) =>
+  getString(`INTRO_TITLE_${index + 1}`),
+);
 
 export const MUTATION_FACEBOOK = gql`
   mutation signInFacebook($socialUser: SocialUserCreateInput!) {
@@ -125,8 +121,10 @@ export const MUTATION_FACEBOOK = gql`
 `;
 
 function Intro(props: Props) {
-  const [requestSignInFacebook] =
-    useMutation<AuthPayload, {socialUser: SocialInput}>(MUTATION_FACEBOOK);
+  const [requestSignInFacebook] = useMutation<
+    AuthPayload,
+    { socialUser: SocialInput }
+  >(MUTATION_FACEBOOK);
 
   const [titleIndex, setTitleIndex] = React.useState(0);
   const [googleUser, setGoogleUser] = useState(null);
@@ -186,13 +184,12 @@ function Intro(props: Props) {
   const facebookLogin = async () => {
     setSigningInFacebook(true);
     try {
-      const {
-        type,
-        token,
-      } = await Facebook.logInWithReadPermissionsAsync(
-        Constants.manifest.facebookAppId, {
+      const { type, token } = await Facebook.logInWithReadPermissionsAsync(
+        Constants.manifest.facebookAppId,
+        {
           permissions: ['email', 'public_profile'],
-        });
+        },
+      );
       if (type === 'success') {
         const response = await fetch(
           `https://graph.facebook.com/me?fields=
@@ -202,22 +199,26 @@ function Intro(props: Props) {
         const responseObject = JSON.parse(await response.text());
         const socialInput: SocialInput = {
           social: responseObject.id,
-          photo: responseObject.picture && responseObject.picture.data
-            ? responseObject.picture.data.url
-            : null,
+          photo:
+            responseObject.picture && responseObject.picture.data
+              ? responseObject.picture.data.url
+              : null,
           email: responseObject.email,
           name: responseObject.name,
           nickname: responseObject.name,
           birthday: responseObject.birthday,
           phone: responseObject.mobile_phone,
-          gender: responseObject.gender === 'male'
-            ? Gender.MALE
-            : responseObject.gender === 'female'
+          gender:
+            responseObject.gender === 'male'
+              ? Gender.MALE
+              : responseObject.gender === 'female'
               ? Gender.FEMALE
               : null,
         };
         const variables = { socialUser: socialInput };
-        const { data: { signInFacebook } }: any = await requestSignInFacebook({ variables });
+        const {
+          data: { signInFacebook },
+        }: any = await requestSignInFacebook({ variables });
         const accessToken = signInFacebook.token;
         AsyncStorage.setItem('token', accessToken);
         props.navigation.navigate('MainStackNavigator');
@@ -257,10 +258,8 @@ function Intro(props: Props) {
           }}
         >
           <TitleWrapper>
-            <TouchableOpacity
-              onPress={props.screenProps.changeTheme}
-            >
-              <LogoImage source={IC_LOGO}/>
+            <TouchableOpacity onPress={props.screenProps.changeTheme}>
+              <LogoImage source={IC_LOGO} />
             </TouchableOpacity>
           </TitleWrapper>
           <SlashImage
@@ -277,12 +276,16 @@ function Intro(props: Props) {
             direction='alternate'
             duration={1000}
           >
-            { titleArray[titleIndex] }
+            {titleArray[titleIndex]}
           </StyledAnimatableText>
           <StyledText>{getString('INTRO_MESSAGE')}</StyledText>
-          <StyledText style={{
-            color: props.screenProps.theme.rosa,
-          }}>{getString('INTRO_WHATSSUB')}</StyledText>
+          <StyledText
+            style={{
+              color: props.screenProps.theme.rosa,
+            }}
+          >
+            {getString('INTRO_WHATSSUB')}
+          </StyledText>
           <SlashImage
             style={{
               marginTop: 38,
@@ -297,14 +300,14 @@ function Intro(props: Props) {
               imgLeftSrc={IC_GOOGLE}
               isLoading={signingInGoogle}
               indicatorColor={props.screenProps.theme.marine}
-              onClick={ () => googleSignInAsync() }
+              onClick={() => googleSignInAsync()}
               textStyle={{
                 color: props.screenProps.theme.fontColor,
                 fontSize: 14,
               }}
               text={getString('SIGN_IN_WITH_GOOGLE')}
             />
-            <View style={{ marginTop: 8 }}/>
+            <View style={{ marginTop: 8 }} />
             <Button
               testID='btnFacebook'
               style={btnStyle}
@@ -324,7 +327,6 @@ function Intro(props: Props) {
               }}
               text={getString('SIGN_IN_WITH_FACEBOOK')}
             />
-
           </ButtonWrapper>
         </ContentScroll>
       </ContentWrapper>

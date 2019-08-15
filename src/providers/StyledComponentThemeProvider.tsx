@@ -7,9 +7,11 @@ import { createTheme } from '../theme';
 
 const StyledComponentThemeProvider = (props) => {
   const { state } = useContext(AppContext);
-  return (<ThemeProvider theme={createTheme(state.theme)}>
-    {props.children}
-  </ThemeProvider>);
+  return (
+    <ThemeProvider theme={createTheme(state.theme)}>
+      {props.children}
+    </ThemeProvider>
+  );
 };
 
 StyledComponentThemeProvider.propTypes = {
