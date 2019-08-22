@@ -1,4 +1,6 @@
-import ProductCard, { Variant } from '../../../src/components/shared/ProductCard';
+import ProductCard, {
+  Variant,
+} from '../../../src/components/shared/ProductCard';
 import React, { useState } from 'react';
 
 import { storiesOf } from '@storybook/react-native';
@@ -9,9 +11,13 @@ const Container = styled.SafeAreaView`
 `;
 const ContainerDeco = (storyFn) => <Container>{storyFn()}</Container>;
 
-const Story = () => {
-  const [isNotificationEnable1, setNotificationEnable1] = useState(false);
-  const [isSubscribing1, setSubscribing1] = useState(false);
+const Story = (props) => {
+  const [isNotificationEnable1, setNotificationEnable1] = useState(
+    props.notification ? props.notification : false,
+  );
+  const [isSubscribing1, setSubscribing1] = useState(
+    props.subscribing ? props.subscribing : false,
+  );
 
   return (
     <ProductCard
@@ -25,11 +31,14 @@ const Story = () => {
       price={65000}
       currentMonthPaymentDate={new Date('2019-7-28')}
       variant={Variant.Subscription}
-      defaultIsSummary={false}
+      defaultIsSummary={props.summary ? props.summary : false}
     />
   );
 };
 
 storiesOf('shared-ProductCard', module)
   .addDecorator(ContainerDeco)
-  .add('default', () => <Story />);
+  .add('default', () => <Story />)
+  .add('notification', () => <Story notification={true} />)
+  .add('subscribing', () => <Story subscribing={true} />)
+  .add('summary', () => <Story summary={true} />);

@@ -2,7 +2,9 @@ import {
   SectionList as ReactNativeSectionList,
   SectionListData,
 } from 'react-native';
+
 import React from 'react';
+import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
 
 const StyledSelectionList = styled(ReactNativeSectionList)`
@@ -45,13 +47,11 @@ const SectionHeaderText = styled.Text`
 
 interface Props {
   sections: readonly SectionListData<any>[];
+  localizeTitle?: boolean;
   [prop: string]: any;
 }
 
-function SectionList({
-  sections,
-  ...props
-}: Props) {
+function SectionList({ sections, localizeTitle, ...props }: Props) {
   return (
     <StyledSelectionList
       renderSectionHeader={({ section: { title } }) => (
@@ -59,7 +59,9 @@ function SectionList({
           <SectionSeparator />
           {title ? (
             <SectionHeader testID='sectionHeader'>
-              <SectionHeaderText>{title}</SectionHeaderText>
+              <SectionHeaderText>
+                {localizeTitle ? getString(title) : title}
+              </SectionHeaderText>
             </SectionHeader>
           ) : (
             <SectionEmptyHeader testID='sectionEmptyHeader' />

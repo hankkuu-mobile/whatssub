@@ -606,7 +606,7 @@ exports[`[CustomSubsRegister] screen renders without crashing 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "rgba(0,0,0,0.5)",
+                "backgroundColor": "rgba(0, 0, 0, 0.5)",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,

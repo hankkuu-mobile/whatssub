@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[AddServiceLink] render component and snapshot matches 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "height": 50,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "opacity": 1,
+        "paddingBottom": 7,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 7,
+      }
+    }
+    testID="TOUCHABLE_ADD_SERVICE_LINK"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#407fff",
+          },
+        ]
+      }
+    >
+      + 검색 결과가 없다면 여기를 눌러 직접 입력해보세요.
+    </Text>
+  </View>
+</View>
+`;

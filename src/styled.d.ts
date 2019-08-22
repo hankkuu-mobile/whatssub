@@ -12,5 +12,8 @@ declare module 'styled-components' {
     marine: string;
     gray: string;
     blue: string;
+    // for debug layout
+    debug: boolean;
+    setDebug: (debug: boolean) => void;
   }
 }

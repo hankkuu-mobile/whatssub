@@ -209,11 +209,12 @@ function Intro(props: Props) {
           birthday: responseObject.birthday,
           phone: responseObject.mobile_phone,
           gender:
+            // prettier-ignore
             responseObject.gender === 'male'
               ? Gender.MALE
               : responseObject.gender === 'female'
-              ? Gender.FEMALE
-              : null,
+                ? Gender.FEMALE
+                : null,
         };
         const variables = { socialUser: socialInput };
         const {

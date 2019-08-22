@@ -17,6 +17,7 @@ const en = {
   PRODUCTION_CARD_SUBSCRIPTION_SWITCH_ON: 'UnSub',
   PRODUCTION_CARD_SUBSCRIPTION_SWITCH_OFF: 'Sub',
   AMOUNT_TO_BE_PAID: 'Amount to be paid',
+  // higher category, used at pie charts and category list at search service
   CATEGORY_CULTURE_LEISURE: 'Culture/Leisure',
   CATEGORY_EDUCATION: 'Education',
   CATEGORY_GAME: 'Game',
@@ -33,6 +34,18 @@ const en = {
   SETTING_NOTIFICATION_MARKETING_PUSH: 'Marketing push notification',
   SETTING_OTHERS_CONTACTUS: 'Contact us',
   SIGN_OUT: 'Sign Out',
+  // lower category
+  CATEGORY_RECOMMENDED: 'Recommended', // Exceptional
+  CATEGORY_COMMUNICATION_EXPENSE: 'Communication Expense',
+  CATEGORY_FINANCE: 'Finance',
+  CATEGORY_RESIDENCE_AND_MAINTENANCE: 'Residence/Maintenance',
+  CATEGORY_ETC: 'Etc',
+  CATEGORY_ENTERTAINMENT: 'Entertainment',
+  CATEGORY_PRODUCTIVITY: 'Productivity',
+  CATEGORY_MUSIC: 'Music',
+  // service group
+  SERVICE_GROUP_LIVING_EXPENSE: 'Living expense',
+  SERVICE_GROUP_SUBSCRIPTION_SERVICE: 'Subscription service',
 };
 
 const ko = {
@@ -50,6 +63,7 @@ const ko = {
   PRODUCTION_CARD_SUBSCRIPTION_SWITCH_ON: '해지',
   PRODUCTION_CARD_SUBSCRIPTION_SWITCH_OFF: '구독',
   AMOUNT_TO_BE_PAID: '결제 예정 금액',
+  // higher category, used at pie charts and category list at search service
   CATEGORY_CULTURE_LEISURE: '문화/여가',
   CATEGORY_EDUCATION: '교육',
   CATEGORY_GAME: '게임',
@@ -66,6 +80,18 @@ const ko = {
   SETTING_NOTIFICATION_MARKETING_PUSH: '마케팅 앱 푸쉬 알림',
   SETTING_OTHERS_CONTACTUS: '문의하기',
   SIGN_OUT: '로그아웃',
+  // lower category
+  CATEGORY_RECOMMENDED: '추천', // Exceptional
+  CATEGORY_COMMUNICATION_EXPENSE: '통신비',
+  CATEGORY_FINANCE: '금융',
+  CATEGORY_RESIDENCE_AND_MAINTENANCE: '주거/관리',
+  CATEGORY_ETC: '기타',
+  CATEGORY_ENTERTAINMENT: '엔터테인먼트',
+  CATEGORY_PRODUCTIVITY: '생산성',
+  CATEGORY_MUSIC: '음악',
+  // service group
+  SERVICE_GROUP_LIVING_EXPENSE: '생활 지출',
+  SERVICE_GROUP_SUBSCRIPTION_SERVICE: '구독 서비스',
 };
 
 i18n.fallbacks = true;

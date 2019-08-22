@@ -22,8 +22,8 @@
    - Configure [Syncing a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
      - `git remote add upstream https://github.com/whatssub/whatssub-mobile`
      - Check it with `git remote -v`
-   * Fetch the branches from upstream repository by `git fetch upstream`
-   * When you want to give `PR`, make new branch `git checkout -b [feature_name]`
+   - Fetch the branches from upstream repository by `git fetch upstream`
+   - When you want to give `PR`, make new branch `git checkout -b [feature_name]`
      - Before pushing `PR`, do `git fetch upstream` from master branch then try the rebase by `git rebase master`
      - Check your status by `git log --decorate --oneline --all --graph` or `npm run git:log`
 2. Git clone your forked repository.
@@ -121,6 +121,23 @@ array.forEach((e) => {
 
 - Space before `(` and after `)`.
 - **If you find code that does not fit in the coding convention, do not ever try to fix code that is not related to your purpose.**
+
+#### Prettier
+
+- [how to use prettier extension for the eslint code rules](https://medium.com/dooboolab/using-eslint-prettier-and-sort-imports-vscode-extensions-for-formatting-open-source-project-16edf317129d)
+- while you are using prettier extension, you may encounter **ternary operator** indentation problems
+
+  ![error](https://i.imgur.com/RhGrbLo.png)
+
+  you can use
+
+  ```
+  // prettier-ignore
+  ```
+
+  like below
+
+  ![fixes](https://i.imgur.com/x3bL5kf.png)
 
 ### Storybook
 

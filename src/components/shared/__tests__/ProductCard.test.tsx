@@ -1,7 +1,14 @@
 import 'react-native';
+
 import * as React from 'react';
+
 import ProductCard, { ProductCardProps, Variant } from '../ProductCard';
-import { RenderResult, act, fireEvent, render } from '@testing-library/react-native';
+import {
+  RenderResult,
+  act,
+  fireEvent,
+  render,
+} from '@testing-library/react-native';
 
 import { AppProvider } from '../../../providers';
 import { ThemeProvider } from 'styled-components/native';
@@ -24,7 +31,7 @@ const component = (props: ProductCardProps) => {
   return (
     <AppProvider doNotWaitFont>
       <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
-        <ProductCard {...props}/>
+        <ProductCard {...props} />
       </ThemeProvider>
     </AppProvider>
   );
@@ -59,8 +66,11 @@ describe('[ProductCard] Interaction', () => {
 
   it('should simulate [notification Icon] click', () => {
     let cnt = 0;
-    const Component = component(
-      { ...props, isNotificationEnable: true, onClickNotification: () => cnt++ });
+    const Component = component({
+      ...props,
+      isNotificationEnable: true,
+      onClickNotification: () => cnt++,
+    });
     testingLib = render(Component);
     act(() => {
       fireEvent.press(testingLib.getByTestId('notiOffIcon'));

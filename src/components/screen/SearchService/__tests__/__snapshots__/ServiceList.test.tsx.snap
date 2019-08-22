@@ -1,0 +1,1729 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceList] render component and snapshot matches 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListFooterComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "displayName": "Styled(View)",
+        "inlineStyle": InlineStyle {
+          "rules": Array [
+            "
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(230, 234, 238);
+",
+          ],
+        },
+        "render": [Function],
+        "styledComponentId": "StyledNativeComponent",
+        "target": [Function],
+        "withComponent": [Function],
+      }
+    }
+    data={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "category": "CATEGORY_COMMUNICATION_EXPENSE",
+              "id": "1",
+              "initialGroup": "0",
+              "name": "휴대폰ㆍ인터넷ㆍTV",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_FINANCE",
+              "id": "2",
+              "initialGroup": "0",
+              "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+              "id": "3",
+              "initialGroup": "0",
+              "name": "공과금ㆍ렌탈",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_ETC",
+              "id": "4",
+              "initialGroup": "0",
+              "name": "학원ㆍ기부ㆍ헌금",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+          ],
+          "order": 0,
+          "title": "SERVICE_GROUP_LIVING_EXPENSE",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "category": "CATEGORY_ENTERTAINMENT",
+              "id": "5",
+              "initialGroup": "1",
+              "name": "넷플릭스",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_PRODUCTIVITY",
+              "id": "6",
+              "initialGroup": "1",
+              "name": "에버노트",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_PRODUCTIVITY",
+              "id": "7",
+              "initialGroup": "1",
+              "name": "폴라리스 오피스",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_ENTERTAINMENT",
+              "id": "8",
+              "initialGroup": "1",
+              "name": "유투브 프리미엄",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_MUSIC",
+              "id": "9",
+              "initialGroup": "1",
+              "name": "멜론",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+          ],
+          "order": 1,
+          "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    renderItem={[Function]}
+    renderSectionHeader={[Function]}
+    scrollEventThrottle={50}
+    sections={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "category": "CATEGORY_COMMUNICATION_EXPENSE",
+              "id": "1",
+              "initialGroup": "0",
+              "name": "휴대폰ㆍ인터넷ㆍTV",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_FINANCE",
+              "id": "2",
+              "initialGroup": "0",
+              "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+              "id": "3",
+              "initialGroup": "0",
+              "name": "공과금ㆍ렌탈",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_ETC",
+              "id": "4",
+              "initialGroup": "0",
+              "name": "학원ㆍ기부ㆍ헌금",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+          ],
+          "order": 0,
+          "title": "SERVICE_GROUP_LIVING_EXPENSE",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "category": "CATEGORY_ENTERTAINMENT",
+              "id": "5",
+              "initialGroup": "1",
+              "name": "넷플릭스",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_PRODUCTIVITY",
+              "id": "6",
+              "initialGroup": "1",
+              "name": "에버노트",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_PRODUCTIVITY",
+              "id": "7",
+              "initialGroup": "1",
+              "name": "폴라리스 오피스",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_ENTERTAINMENT",
+              "id": "8",
+              "initialGroup": "1",
+              "name": "유투브 프리미엄",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+            Object {
+              "category": "CATEGORY_MUSIC",
+              "id": "9",
+              "initialGroup": "1",
+              "name": "멜론",
+              "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+            },
+          ],
+          "order": 1,
+          "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+        },
+      ]
+    }
+    stickyHeaderIndices={
+      Array [
+        0,
+        6,
+      ]
+    }
+    stickySectionHeadersEnabled={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgb(230, 234, 238)",
+                "display": "flex",
+                "height": 1,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgb(249, 250, 251)",
+                "display": "flex",
+                "height": 36,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          testID="sectionHeader"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(153, 162, 170)",
+                  "fontSize": 12,
+                  "letterSpacing": -0.5,
+                },
+              ]
+            }
+          >
+            생활 지출
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                휴대폰ㆍ인터넷ㆍTV
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                통신비
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                "id": "1",
+                "initialGroup": "0",
+                "name": "휴대폰ㆍ인터넷ㆍTV",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_FINANCE",
+                "id": "2",
+                "initialGroup": "0",
+                "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            trailingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                금융
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_FINANCE",
+                "id": "2",
+                "initialGroup": "0",
+                "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                "id": "3",
+                "initialGroup": "0",
+                "name": "공과금ㆍ렌탈",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            trailingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                공과금ㆍ렌탈
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                주거/관리
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                "id": "3",
+                "initialGroup": "0",
+                "name": "공과금ㆍ렌탈",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_ETC",
+                "id": "4",
+                "initialGroup": "0",
+                "name": "학원ㆍ기부ㆍ헌금",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            trailingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "stretch",
+                "backgroundColor": "white",
+                "flexDirection": "row",
+                "height": 70,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexBasis": 78,
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 5,
+                    "height": 42,
+                    "width": 42,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#323b43",
+                    "fontSize": 16,
+                    "letterSpacing": -0.5,
+                  },
+                ]
+              }
+              testID="SERVICE_ELEMENT_NAME"
+            >
+              학원ㆍ기부ㆍ헌금
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexBasis": 108,
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "paddingRight": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#99a2aa",
+                    "fontSize": 14,
+                    "textAlign": "right",
+                  },
+                ]
+              }
+              testID="SERVICE_ELEMENT_CATEGORY"
+            >
+              기타
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgb(230, 234, 238)",
+                "display": "flex",
+                "height": 1,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgb(249, 250, 251)",
+                "display": "flex",
+                "height": 36,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          testID="sectionHeader"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(153, 162, 170)",
+                  "fontSize": 12,
+                  "letterSpacing": -0.5,
+                },
+              ]
+            }
+          >
+            구독 서비스
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                넷플릭스
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                엔터테인먼트
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_ENTERTAINMENT",
+                "id": "5",
+                "initialGroup": "1",
+                "name": "넷플릭스",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            leadingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_PRODUCTIVITY",
+                "id": "6",
+                "initialGroup": "1",
+                "name": "에버노트",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                에버노트
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                생산성
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_PRODUCTIVITY",
+                "id": "6",
+                "initialGroup": "1",
+                "name": "에버노트",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            leadingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_PRODUCTIVITY",
+                "id": "7",
+                "initialGroup": "1",
+                "name": "폴라리스 오피스",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "height": 70,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexBasis": 78,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 42,
+                      "width": 42,
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": 16,
+                      "letterSpacing": -0.5,
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_NAME"
+              >
+                폴라리스 오피스
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 108,
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "paddingRight": 24,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#99a2aa",
+                      "fontSize": 14,
+                      "textAlign": "right",
+                    },
+                  ]
+                }
+                testID="SERVICE_ELEMENT_CATEGORY"
+              >
+                생산성
+              </Text>
+            </View>
+          </View>
+          <View
+            highlighted={false}
+            leadingItem={
+              Object {
+                "category": "CATEGORY_PRODUCTIVITY",
+                "id": "7",
+                "initialGroup": "1",
+                "name": "폴라리스 오피스",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+            leadingSection={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_COMMUNICATION_EXPENSE",
+                    "id": "1",
+                    "initialGroup": "0",
+                    "name": "휴대폰ㆍ인터넷ㆍTV",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_FINANCE",
+                    "id": "2",
+                    "initialGroup": "0",
+                    "name": "대출ㆍ보험ㆍ적금ㆍ예금ㆍ곗돈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_RESIDENCE_AND_MAINTENANCE",
+                    "id": "3",
+                    "initialGroup": "0",
+                    "name": "공과금ㆍ렌탈",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ETC",
+                    "id": "4",
+                    "initialGroup": "0",
+                    "name": "학원ㆍ기부ㆍ헌금",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 0,
+                "title": "SERVICE_GROUP_LIVING_EXPENSE",
+              }
+            }
+            section={
+              Object {
+                "data": Array [
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "5",
+                    "initialGroup": "1",
+                    "name": "넷플릭스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "6",
+                    "initialGroup": "1",
+                    "name": "에버노트",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_PRODUCTIVITY",
+                    "id": "7",
+                    "initialGroup": "1",
+                    "name": "폴라리스 오피스",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_ENTERTAINMENT",
+                    "id": "8",
+                    "initialGroup": "1",
+                    "name": "유투브 프리미엄",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                  Object {
+                    "category": "CATEGORY_MUSIC",
+                    "id": "9",
+                    "initialGroup": "1",
+                    "name": "멜론",
+                    "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+                  },
+                ],
+                "order": 1,
+                "title": "SERVICE_GROUP_SUBSCRIPTION_SERVICE",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "rgb(243, 245, 247)",
+                  "display": "flex",
+                  "height": 1,
+                  "width": "91.47%",
+                },
+              ]
+            }
+            trailingItem={
+              Object {
+                "category": "CATEGORY_ENTERTAINMENT",
+                "id": "8",
+                "initialGroup": "1",
+                "name": "유투브 프리미엄",
+                "thumbnail": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "rgb(230, 234, 238)",
+                "display": "flex",
+                "height": 1,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

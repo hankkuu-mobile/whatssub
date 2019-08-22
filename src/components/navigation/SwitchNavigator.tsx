@@ -34,11 +34,6 @@ export default function MySwitchNavigator() {
   const { state, changeTheme } = useContext(AppContext);
   const { theme } = state;
   return (
-    <AppContainer
-      screenProps={{
-        theme: createTheme(theme),
-        changeTheme,
-      }}
-    />
+    <AppContainer screenProps={{ theme: createTheme(theme), changeTheme }} />
   );
 }

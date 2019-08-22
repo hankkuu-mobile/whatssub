@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceElement] renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "height": 70,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 78,
+          "flexGrow": 0,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://facebook.github.io/react-native/docs/assets/favicon.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "borderRadius": 5,
+            "height": 42,
+            "width": 42,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#323b43",
+            "fontSize": 16,
+            "letterSpacing": -0.5,
+          },
+        ]
+      }
+      testID="SERVICE_ELEMENT_NAME"
+    >
+      name
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 108,
+          "flexGrow": 0,
+          "justifyContent": "center",
+          "paddingRight": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#99a2aa",
+            "fontSize": 14,
+            "textAlign": "right",
+          },
+        ]
+      }
+      testID="SERVICE_ELEMENT_CATEGORY"
+    >
+      category
+    </Text>
+  </View>
+</View>
+`;

@@ -1,8 +1,5 @@
 import React, { Component, useRef } from 'react';
-import {
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 
 import { IC_LIST_BTN } from '../../utils/Icons';
 import { colors } from '../../theme';
@@ -18,13 +15,13 @@ const Container = styled.View`
 `;
 
 const Title = styled.Text`
-  color: ${colors.textPrimaryLight}
+  color: ${colors.textPrimaryLight};
   font-size: 16px;
   font-family: 'spoqa-han-sans-regular';
 `;
 
 const Content = styled.TextInput`
-  color: ${colors.textSecondaryLight}
+  color: ${colors.textSecondaryLight};
   font-size: 16px;
   font-family: 'spoqa-han-sans-regular';
 `;
@@ -36,14 +33,14 @@ const Arrow = styled.Image`
 `;
 
 interface Props {
-  title: string
-  content: string
-  testID?: string
-  contentStyle?: any
-  showArrow?: boolean
-  onPress?(): any
-  editable?: boolean
-  onChangeContent?(string): void
+  title: string;
+  content: string;
+  testID?: string;
+  contentStyle?: any;
+  showArrow?: boolean;
+  onPress?(): any;
+  editable?: boolean;
+  onChangeContent?(string): void;
 }
 
 function ServiceItem(props: Props) {
@@ -61,6 +58,7 @@ function ServiceItem(props: Props) {
     <TouchableOpacity
       testID={props.testID}
       onPress={
+        // prettier-ignore
         props.onPress
           ? props.onPress
           : editable && inputText != null
@@ -71,20 +69,17 @@ function ServiceItem(props: Props) {
     >
       <Container>
         <Title>{title}</Title>
-        <View style={{ flex: 1 }}/>
+        <View style={{ flex: 1 }} />
         <Content
           ref={inputText}
           style={contentStyle}
           editable={editable}
           pointerEvents={editable ? 'auto' : 'none'}
-          onChangeText={onChangeContent}>
+          onChangeText={onChangeContent}
+        >
           {content}
         </Content>
-        {
-          showArrow
-            ? <Arrow source={IC_LIST_BTN}/>
-            : null
-        }
+        {showArrow ? <Arrow source={IC_LIST_BTN} /> : null}
       </Container>
     </TouchableOpacity>
   );

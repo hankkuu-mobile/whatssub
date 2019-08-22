@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceCategory] render component and snapshot matches 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-start",
+        "marginLeft": 20,
+        "marginRight": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    horizontal={true}
+    style={
+      Array [
+        Object {
+          "paddingBottom": 12,
+          "paddingTop": 12,
+        },
+      ]
+    }
+  >
+    <View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#3e7eff",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_RECOMMENDED"
+      >
+        <Text
+          selected={true}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          추천
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_COMMUNICATION_EXPENSE"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          통신비
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_FINANCE"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          금융
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_RESIDENCE_AND_MAINTENANCE"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          주거/관리
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_ETC"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          기타
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_ENTERTAINMENT"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          엔터테인먼트
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_PRODUCTIVITY"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          생산성
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#e1e4e7",
+            "borderRadius": 17,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "marginRight": 5,
+            "opacity": 1,
+            "paddingBottom": 9,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 9,
+          }
+        }
+        testID="CATEGORY_SELECT_CATEGORY_MUSIC"
+      >
+        <Text
+          selected={false}
+          style={
+            Array [
+              Object {
+                "color": "#a4a5a6",
+                "fontSize": 12,
+                "letterSpacing": -0.5,
+              },
+            ]
+          }
+        >
+          음악
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
