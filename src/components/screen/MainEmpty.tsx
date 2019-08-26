@@ -7,10 +7,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, { Component } from 'react';
 
 import Constants from 'expo-constants';
 import { LinearGradient } from 'expo-linear-gradient';
+import React from 'react';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
 
