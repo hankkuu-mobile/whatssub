@@ -2,11 +2,13 @@ import { IC_ADD, IC_ADD_SERVICE } from '../../utils/Icons';
 import {
   Image,
   Platform,
+  SafeAreaView,
   ScrollView,
   TouchableOpacity,
   View,
 } from 'react-native';
 import React, { Component } from 'react';
+
 import Constants from 'expo-constants';
 import { LinearGradient } from 'expo-linear-gradient';
 import { getString } from '../../../STRINGS';
@@ -42,10 +44,8 @@ interface Props {
 function Page(props: Props) {
   return (
     <Container>
-      <LinearGradient
-        colors={['rgb(114,181,255)', 'rgb(62,126,255)']}
-        style={{ width: '100%', height: '40%' }}>
-        <ScrollView style={{ marginTop: Platform.OS === 'ios' ? 30 : 0 }} >
+      <LinearGradient colors={['rgb(114,181,255)', 'rgb(62,126,255)']}>
+        <SafeAreaView>
           <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
             <View style={{ justifyContent: 'center', paddingRight: 40 }}>
               <StyledText>{getString('EMPTY_WELCOME')}</StyledText>
@@ -54,49 +54,40 @@ function Page(props: Props) {
             <TouchableOpacity
               testID='btn'
               onPress={() => {}}
-              style={{ paddingRight: 10, marginTop: 15, position: 'absolute' }}>
-              <Image style={{ width: 30, height: 30 }} source={IC_ADD_SERVICE}></Image>
+              style={{ paddingRight: 15, marginTop: 20, position: 'absolute' }}>
+              <Image style={{ width: 24, height: 24 }} source={IC_ADD_SERVICE}></Image>
             </TouchableOpacity>
           </View>
-          <View style={{ alignItems: 'flex-end', paddingRight: 110 }}>
+          <View style={{ alignItems: 'flex-end', paddingRight: 110, marginBottom: 40 }}>
             <StyledText style={{ paddingRight: 40 }}>{getString('EMPTY_COMMENT1')}</StyledText>
             <StyledText>{getString('EMPTY_COMMENT2')}</StyledText>
           </View>
-        </ScrollView>
+        </SafeAreaView>
       </LinearGradient>
-      <StyledOuterEmptyBox>
-        <StyledEmptyBox style={{ height: 180 }}>
-          <View style= {{
-            marginTop: 20.3,
-            marginLeft: 81.5,
-            marginRight: 70,
-          }}>
-            <StyledEmptySpace></StyledEmptySpace>
-          </View>
-          <View style= {{
-            marginTop: 20.3,
-            marginLeft: 122.8,
-            marginRight: 111.2,
-          }}>
-            <StyledEmptySpace></StyledEmptySpace>
-          </View>
-          <View style= {{
-            marginTop: 20.3,
-            marginLeft: 122.8,
-            marginRight: 111.2,
-          }}>
-            <StyledEmptySpace></StyledEmptySpace>
-          </View>
-          <View style= {{
-            marginTop: 20.3,
-            marginLeft: 81.5,
-            marginRight: 70,
-          }}>
-            <StyledEmptySpace></StyledEmptySpace>
-          </View>
-        </StyledEmptyBox>
+      <ScrollView>
         <StyledOuterEmptyBox>
-          <StyledEmptyBox style={{ height: 60 }}>
+          <StyledEmptyBox style={{ height: 180 }}>
+            <View style= {{
+              marginTop: Platform.OS === 'ios' ? 30.3 : 20.3,
+              marginLeft: 81.5,
+              marginRight: 70,
+            }}>
+              <StyledEmptySpace></StyledEmptySpace>
+            </View>
+            <View style= {{
+              marginTop: 20.3,
+              marginLeft: 122.8,
+              marginRight: 111.2,
+            }}>
+              <StyledEmptySpace></StyledEmptySpace>
+            </View>
+            <View style= {{
+              marginTop: 20.3,
+              marginLeft: 122.8,
+              marginRight: 111.2,
+            }}>
+              <StyledEmptySpace></StyledEmptySpace>
+            </View>
             <View style= {{
               marginTop: 20.3,
               marginLeft: 81.5,
@@ -105,23 +96,34 @@ function Page(props: Props) {
               <StyledEmptySpace></StyledEmptySpace>
             </View>
           </StyledEmptyBox>
+          <StyledOuterEmptyBox>
+            <StyledEmptyBox style={{ height: 60 }}>
+              <View style= {{
+                marginTop: 20.3,
+                marginLeft: 81.5,
+                marginRight: 70,
+              }}>
+                <StyledEmptySpace></StyledEmptySpace>
+              </View>
+            </StyledEmptyBox>
+          </StyledOuterEmptyBox>
+          <StyledOuterEmptyBox>
+            <StyledEmptyBox style={{ height: 60 }}>
+              <View style= {{
+                marginTop: 20.3,
+                marginLeft: 81.5,
+                marginRight: 70,
+              }}>
+                <StyledEmptySpace></StyledEmptySpace>
+              </View>
+            </StyledEmptyBox>
+          </StyledOuterEmptyBox>
+          <StyledOuterEmptyBox>
+            <StyledEmptyBox style={{ height: 100 }}>
+            </StyledEmptyBox>
+          </StyledOuterEmptyBox>
         </StyledOuterEmptyBox>
-        <StyledOuterEmptyBox>
-          <StyledEmptyBox style={{ height: 60 }}>
-            <View style= {{
-              marginTop: 20.3,
-              marginLeft: 81.5,
-              marginRight: 70,
-            }}>
-              <StyledEmptySpace></StyledEmptySpace>
-            </View>
-          </StyledEmptyBox>
-        </StyledOuterEmptyBox>
-        <StyledOuterEmptyBox>
-          <StyledEmptyBox style={{ height: 100 }}>
-          </StyledEmptyBox>
-        </StyledOuterEmptyBox>
-      </StyledOuterEmptyBox>
+      </ScrollView>
     </Container>
   );
 }
