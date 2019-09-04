@@ -52,7 +52,7 @@ function Page(props: Props) {
             </View>
             <Image source={IC_ADD}></Image>
             <TouchableOpacity
-              testID='btnTest1'
+              testID='btnTest'
               onPress={() => {}}
               style={{ paddingRight: 15, marginTop: 20, position: 'absolute' }}
             >
